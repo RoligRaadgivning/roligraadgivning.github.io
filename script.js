@@ -1,21 +1,4 @@
-const nav = document.querySelector(".nav");
-const menu = document.querySelector(".menu-btn");
-menu?.addEventListener("click", () => {
-  const open = nav.classList.toggle("open");
-  menu.setAttribute("aria-expanded", String(open));
-});
-document.querySelectorAll(".nav a").forEach(a => a.addEventListener("click", () => {
-  nav.classList.remove("open");
-  menu?.setAttribute("aria-expanded","false");
-}));
-document.getElementById("year").textContent = new Date().getFullYear();
-
-/*
-  BOOKING SETUP
-  ----------------
-  When you have your booking URL, change the href on #bookingButton to it.
-  Example:
-  document.getElementById("bookingButton").href = "https://cal.com/YOUR-NAME/30min";
-  document.getElementById("bookingButton").target = "_blank";
-  document.getElementById("bookingButton").rel = "noopener";
-*/
+const menuBtn=document.querySelector('.menu-btn');const mobileMenu=document.querySelector('.mobile-menu');
+menuBtn?.addEventListener('click',()=>{const open=mobileMenu.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open);mobileMenu.setAttribute('aria-hidden',!open);menuBtn.textContent=open?'×':'☰';});
+mobileMenu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileMenu.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');mobileMenu.setAttribute('aria-hidden','true');menuBtn.textContent='☰';}));
+document.getElementById('year').textContent=new Date().getFullYear();

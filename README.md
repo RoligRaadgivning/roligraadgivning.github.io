@@ -1,17 +1,34 @@
-# Chris Stegemejer Roliggaard — website
+# Chris Stegemejer Roliggaard — version 2
 
-Dette er en færdig, responsiv one-page hjemmeside bygget som et statisk site.
+Statisk GitHub Pages-side til Chris Stegemejer Roliggaard.
 
 ## Filer
-- `index.html` — alt indhold og struktur
-- `styles.css` — design, layout og responsive mobilversion
-- `script.js` — lille mobilnavigation + årstal
-- `assets/` — de tre originale portrætter fra chatten
 
-## Før publicering
-Det eneste bevidste hul er selve kalenderforbindelsen. I `index.html` ligger knappen “BOOK 30 MIN.” og et tydeligt bookingområde. Når du har valgt fx Cal.com, Calendly eller Microsoft Bookings, skal bookingknappen kobles til den faktiske URL.
+- `index.html` — sidens struktur og tekst
+- `styles.css` — design, layout og mobilresponsivitet
+- `script.js` — mobilmenu og automatisk årstal i footer
 
-Der er ikke opfundet en falsk bookingkonto eller en ikke-eksisterende kalender.
+## Billeder
 
-## Publicering
-Sitet kan lægges på fx Framer, Netlify, Vercel eller GitHub Pages. Hvis det skal bruges i Framer, kan designet bruges som specifikation for sektioner, typografi, farver og billedplacering.
+Behold disse tre billedfiler i repositoryets root:
+
+- `chris-hero.jpeg`
+- `chris-full.jpeg`
+- `chris-smile.jpeg`
+
+Version 2 bruger aktuelt `chris-hero.jpeg` i heroen og `chris-full.jpeg` i Om Chris-sektionen. `chris-smile.jpeg` ligger klar til senere brug.
+
+## GitHub Pages
+
+Repositoryet skal publiceres fra:
+
+- Branch: `main`
+- Folder: `/ (root)`
+
+## Booking
+
+Bookingsektionen er bevidst en placeholder. Når et Google Calendar-bookinglink er oprettet, skal CTA'en kobles direkte til den rigtige booking.
+
+## Vigtigt
+
+Siden bruger Google Fonts via ekstern forbindelse. Resten af selve siden er statisk HTML/CSS/JavaScript.

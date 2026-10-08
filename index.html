@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Chris Stegemejer Roliggaard – problemløser, idémager og relationsskaber. Jeg hjælper mennesker og organisationer med at få noget til at ske.">
+  <meta name="description" content="Chris Stegemejer Roliggaard hjælper virksomheder og organisationer med at finde ud af, hvad der står i vejen, udvikle nye muligheder og få dem omsat til handling.">
+  <meta name="theme-color" content="#f3f1e9">
   <title>Chris Stegemejer Roliggaard — Problemløser · Idémager · Relationsskaber</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,235 +12,96 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav">
+  <header class="nav" id="top">
     <a class="brand" href="#top" aria-label="Chris Stegemejer Roliggaard – forsiden">
-      <span class="brand-dot"></span>
-      <span>CHRIS STEGEMEJER ROLIGGAARD</span>
+      <span class="brand-dot"></span><span>CHRIS STEGEMEJER ROLIGGAARD</span>
     </a>
     <nav class="nav-links" aria-label="Hovednavigation">
-      <a href="#arbejde">Det jeg skaber</a>
-      <a href="#rystetur">CV-Rystetur</a>
+      <a href="#problem">Problemet</a>
+      <a href="#hjaelp">Det kan jeg hjælpe med</a>
+      <a href="#proof">Resultater</a>
       <a href="#mig">Om Chris</a>
-      <a class="nav-cta" href="#book">BOOK 30 MIN.</a>
+      <a class="nav-cta" href="#book">BOOK 30 MIN. →</a>
     </nav>
     <button class="menu-btn" aria-label="Åbn menu" aria-expanded="false">☰</button>
   </header>
 
-  <main id="top">
-    <section class="hero">
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#problem">Problemet</a>
+    <a href="#hjaelp">Det kan jeg hjælpe med</a>
+    <a href="#proof">Resultater</a>
+    <a href="#mig">Om Chris</a>
+    <a class="mobile-cta" href="#book">BOOK 30 MIN. →</a>
+  </div>
+
+  <main>
+    <section class="hero section-pad">
       <div class="hero-copy">
         <p class="eyebrow">PROBLEMLØSER · IDÉMAGER · RELATIONSSKABER</p>
-        <h1>Jeg hjælper mennesker og organisationer med at <em>få noget til at ske.</em></h1>
-        <p class="lead">Når en idé skal udvikles. Når et problem bliver ved med at vende tilbage. Eller når noget skal gentænkes, men løsningen endnu ikke er givet.</p>
+        <h1>Når noget skal flytte sig, <em>men løsningen ikke er givet.</em></h1>
+        <p class="lead">Jeg hjælper virksomheder og organisationer med at finde ud af, hvad der faktisk står i vejen, udvikle nye muligheder og få dem omsat til handling.</p>
         <div class="hero-actions">
-          <a class="button button-dark" href="#book">BOOK 30 MIN. <span>↗</span></a>
-          <a class="text-link" href="#arbejde">Se hvad jeg har skabt ↓</a>
-        </div>
-        <div class="hero-proof">
-          <div><strong>6 → 60</strong><span>deltagere i CV-Rystetur</span></div>
-          <div><strong>20% → &lt;1%</strong><span>ubesvarede opkald</span></div>
-          <div><strong>3 mdr. → ~2 år</strong><span>fastholdelse i udviklingscase</span></div>
+          <a class="button button-dark" href="#book">BOOK 30 MIN. MØDE <span>↗</span></a>
+          <a class="text-link" href="#problem">Se om jeg kan hjælpe ↓</a>
         </div>
       </div>
-      <div class="hero-image-wrap">
-        <div class="hero-tag">“Jeg kan godt lide det<br>ufærdige.”</div>
-        <img class="hero-image" src="chris-hero.jpeg" alt="Chris Stegemejer Roliggaard" fetchpriority="high">
-        <div class="hero-number">01</div>
+      <div class="hero-visual">
+        <img src="chris-hero.jpg" alt="Chris Stegemejer Roliggaard" fetchpriority="high">
+        <span class="scribble scribble-top">PROBLEMLØSER</span>
+        <span class="hero-index">01</span>
       </div>
     </section>
 
-    <section class="statement">
-      <div class="statement-inner">
-        <span class="section-label">01 / MÅDEN JEG ARBEJDER PÅ</span>
-        <h2>Måske har I ikke brug for én, der kommer med alle svarene.</h2>
-        <p class="statement-big">Måske har I brug for én, der stiller de rigtige spørgsmål.</p>
-        <p>Jeg arbejder bedst dér, hvor problemet ikke er helt defineret, og hvor løsningen ikke ligger klar på forhånd. Jeg undersøger, udfordrer, involverer og udvikler – og hjælper med at få det fra tanke til handling.</p>
+    <section class="problem section-pad" id="problem">
+      <div class="section-kicker">01 / MÅSKE ER DET HER JERES UDFORDRING</div>
+      <div class="problem-intro">
+        <h2>Måske er problemet ikke mangel på idéer.</h2>
+        <p class="big-line">Måske er det noget andet, der spænder ben.</p>
+      </div>
+      <div class="problem-grid">
+        <article><span>01</span><h3>I ved, at noget skal ændres – men ikke helt hvad.</h3><p>Problemet bliver ved med at vende tilbage, selvom I har prøvet at løse det.</p></article>
+        <article><span>02</span><h3>I har en idé – men den kommer ikke rigtigt videre.</h3><p>Der er potentiale, men også ubesvarede spørgsmål, modstand eller manglende retning.</p></article>
+        <article><span>03</span><h3>I har brug for at få mennesker til at tænke sammen.</h3><p>Forskellige perspektiver skal samles, så I kan komme fra snak til en konkret vej videre.</p></article>
+      </div>
+      <p class="bridge">Det er dér, jeg kommer ind.</p>
+    </section>
+
+    <section class="help section-pad" id="hjaelp">
+      <div class="section-kicker">02 / DET KAN JEG HJÆLPE JER MED</div>
+      <div class="section-title-row"><h2>Fra komplekst problem<br>til en vej videre.</h2><p>Jeg kommer ikke med en færdig standardløsning, før jeg har forstået virkeligheden. Jeg undersøger, udfordrer, involverer og udvikler sammen med de mennesker, der skal få løsningen til at fungere.</p></div>
+      <div class="service-grid">
+        <article class="service"><span class="service-no">01</span><div><h3>Find det, der faktisk er galt</h3><p class="service-sub">Når problemet ikke er så enkelt, som det ser ud.</p><p>Jeg går bag om symptomerne, samler data og perspektiver og undersøger, hvor problemet reelt ligger – så I bruger kræfterne på at løse det rigtige problem.</p></div></article>
+        <article class="service"><span class="service-no">02</span><div><h3>Få idéen videre</h3><p class="service-sub">Når I har en idé, men mangler retning eller næste skridt.</p><p>Jeg hjælper med at kvalificere idéen, udfordre den og omsætte den til et konkret koncept eller en mulighed, I kan arbejde videre med.</p></div></article>
+        <article class="service"><span class="service-no">03</span><div><h3>Få mennesker til at skabe sammen</h3><p class="service-sub">Når forskellige faggrupper og perspektiver skal finde en fælles løsning.</p><p>Jeg designer og faciliterer workshops og processer, hvor mennesker bidrager, udfordrer hinanden konstruktivt og ender med noget mere konkret end en væg fuld af Post-its.</p></div></article>
+        <article class="service"><span class="service-no">04</span><div><h3>Få det til at ske</h3><p class="service-sub">Når beslutningen er taget, men arbejdet først lige er begyndt.</p><p>Jeg hjælper med at skabe struktur, involvere de rigtige mennesker og få idéer og beslutninger omsat til handling.</p></div></article>
       </div>
     </section>
 
-    <section class="pillars" id="arbejde">
-      <div class="section-heading">
-        <span class="section-label">02 / DET I KAN BRUGE MIG TIL</span>
-        <h2>Tre ting går igen.</h2>
-      </div>
-      <div class="pillar-grid">
-        <article class="pillar pillar-problem">
-          <span class="pillar-no">01</span>
-          <h3>PROBLEMLØSER</h3>
-          <p>Når noget ikke fungerer, starter jeg med at forstå hvorfor. Jeg kobler data, processer og mennesker og leder efter det egentlige problem – ikke bare symptomet.</p>
-          <span class="pillar-foot">Analyse · Processer · Udvikling</span>
-        </article>
-        <article class="pillar pillar-idea">
-          <span class="pillar-no">02</span>
-          <h3>IDÉMAGER</h3>
-          <p>Jeg elsker idéer, der endnu ikke er færdige. Jeg hjælper med at kvalificere dem, udfordre dem og gøre dem konkrete nok til, at nogen kan bygge videre på dem.</p>
-          <span class="pillar-foot">Idéudvikling · Koncept · Innovation</span>
-        </article>
-        <article class="pillar pillar-relation">
-          <span class="pillar-no">03</span>
-          <h3>RELATIONSSKABER</h3>
-          <p>De bedste løsninger bliver sjældent skabt alene. Jeg får de rigtige mennesker rundt om bordet og skaber et rum, hvor forskellige perspektiver kan blive til noget fælles.</p>
-          <span class="pillar-foot">Facilitering · Workshops · Samarbejde</span>
-        </article>
+    <section class="proof section-pad" id="proof">
+      <div class="section-kicker">03 / DET ER IKKE KUN ORD</div>
+      <div class="proof-heading"><h2>Har jeg gjort det før?</h2><p>Ja. Her er tre konkrete eksempler.</p></div>
+      <div class="proof-grid">
+        <article><strong>20 % → &lt;1 %</strong><h3>Ubesvarede opkald i kundeservice</h3><p>Gennem analyse af data, systemer, arbejdsgange og medarbejdere blev andelen af ubesvarede opkald reduceret fra omkring 20 % til under 1 %.</p></article>
+        <article><strong>3 mdr. → ~2 år</strong><h3>Fastholdelse af medarbejdere</h3><p>Gennem ændringer i rammer, opgaver, fællesskab og udviklingsmuligheder blev en fastholdelse på omkring tre måneder ændret til næsten to år.</p></article>
+        <article><strong>6 → 60</strong><h3>CV-Rystetur</h3><p>CV-Rystetur voksede fra seks mennesker omkring et bord til 60 deltagere gennem konceptudvikling, facilitering, partnerskaber og kommunikation.</p></article>
       </div>
     </section>
 
-    <section class="cases">
-      <div class="section-heading">
-        <span class="section-label">03 / DET HAR JEG ALLEREDE SKABT</span>
-        <h2>Ikke bare ord.<br><em>Konkrete spor.</em></h2>
-      </div>
-      <div class="case-list">
-        <article class="case case-featured">
-          <div class="case-meta"><span>CASE 01</span><span>CV-RYSTETUR</span></div>
-          <div class="case-content">
-            <div>
-              <p class="case-kicker">Fra 6 mennesker med en idé til 60 mennesker i rummet.</p>
-              <h3>CV-Rystetur</h3>
-            </div>
-            <div>
-              <p>Et gratis format for jobsøgende, bygget fra bunden. Koncept, format, partnerskaber, hjemmeside, kommunikation og facilitering. Det begyndte med seks deltagere og voksede til 60.</p>
-              <a href="#rystetur" class="case-link">Se konceptet →</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="case">
-          <div class="case-meta"><span>CASE 02</span><span>FOLKEKIRKENS NØDHJÆLP</span></div>
-          <div class="case-content">
-            <div><h3>Fra ca. 3 måneder til næsten 2 års fastholdelse.</h3></div>
-            <div>
-              <p>Jeg gik tæt på medarbejderne, faciliterede samtaler og workshops og arbejdede på tværs for at forstå, hvad der skabte værdi, drænede og gav lyst til udvikling. Derefter ændrede vi rammer, opgaver og måder at arbejde på.</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="case">
-          <div class="case-meta"><span>CASE 03</span><span>GLADTEKNIK</span></div>
-          <div class="case-content">
-            <div><h3>Fra data og siloer til fælles retning.</h3></div>
-            <div>
-              <p>Jeg analyserede salgsaktivitet, mails, opkald og kundedata, fandt mønstre og flaskehalse og byggede en fælles CRM-struktur, bedre datakvalitet og et tydeligere B2B-kunderejse-perspektiv.</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="case">
-          <div class="case-meta"><span>CASE 04</span><span>BYBANZAI</span></div>
-          <div class="case-content">
-            <div><h3>Fra idé til koncept, prototype og mennesker.</h3></div>
-            <div>
-              <p>En idé fra et innovationsforløb blev udviklet gennem produktudvikling, workshops, prototyper og partnerskaber. Jeg arbejdede med hele bevægelsen fra “kunne man?” til “lad os prøve”.</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="case">
-          <div class="case-meta"><span>CASE 05</span><span>JYLLANDS-POSTEN</span></div>
-          <div class="case-content">
-            <div><h3>En ny salgsorganisation fra blankt papir.</h3></div>
-            <div>
-              <p>Jeg byggede en ny organisation med 27 medarbejdere, udviklede strategi og arbejdsgange og skabte en tydeligere struktur omkring pipeline, kvalitet og performance. Resultat: ca. 25% omsætningsvækst og ca. 30% vækst i den digitale portefølje.</p>
-            </div>
-          </div>
-        </article>
-      </div>
+    <section class="about section-pad" id="mig">
+      <div class="about-image"><img src="chris-about.jpg" alt="Chris Stegemejer Roliggaard smilende" loading="lazy"></div>
+      <div class="about-copy"><div class="section-kicker">04 / HVEM ER CHRIS?</div><h2>Jeg kan godt lide det, der endnu ikke er færdigt.</h2><p>Jeg har arbejdet med forretningsudvikling, analyse, salg, organisation, processer, idéudvikling og mennesker. På tværs af brancher har der været én rød tråd: Jeg bliver engageret, når noget skal udvikles.</p><p>Jeg er ikke den, der nødvendigvis har svaret, før vi begynder. Jeg er den, der gerne vil forstå problemet, finde de rigtige mennesker, stille de besværlige spørgsmål og være med til at bygge svaret.</p><p class="signature">Chris<br><span>Problemløser · Idémager · Relationsskaber</span></p></div>
     </section>
 
-    <section class="method">
-      <div class="method-image">
-        <img src="chris-full.jpeg" alt="Chris Stegemejer Roliggaard smilende" loading="lazy">
-        <span class="image-note">Nysgerrig af natur.<br>Praktisk af nødvendighed.</span>
-      </div>
-      <div class="method-copy">
-        <span class="section-label">04 / SÅDAN ARBEJDER JEG</span>
-        <h2>Udvikling skal kunne mærkes<br>– ikke bare beskrives.</h2>
-        <div class="steps">
-          <div><b>01</b><span><strong>UNDERSØGER</strong> – Hvad sker der egentlig?</span></div>
-          <div><b>02</b><span><strong>UDFORDRER</strong> – Er det overhovedet det rigtige problem?</span></div>
-          <div><b>03</b><span><strong>INVOLVERER</strong> – Hvem skal være med for at skabe en god løsning?</span></div>
-          <div><b>04</b><span><strong>UDVIKLER</strong> – Hvilke muligheder har vi?</span></div>
-          <div><b>05</b><span><strong>FÅR DET TIL AT SKE</strong> – Hvad gør vi nu?</span></div>
-        </div>
-      </div>
+    <section class="rystetur section-pad">
+      <div class="section-kicker">05 / MIT EGET KONCEPT</div>
+      <div class="rystetur-grid"><div><p class="rystetur-word">RYSTETUR</p><h2>Et format til at få mennesker til at <em>se noget på en ny måde.</em></h2><p>CV-Rystetur blev skabt, fordi jeg så et behov: jobsøgende havde brug for mere end at sidde alene med deres CV. De havde brug for andre mennesker, ærlig sparring og nye perspektiver.</p><div class="mini-stats"><span><b>6 → 60</b> deltagere</span><span><b>100.000+</b> LinkedIn-visninger</span><span><b>GRATIS</b> for deltagerne</span></div></div><div class="rystetur-card"><span>INDSÆT PROBLEM</span><strong>→</strong><span>RYSTETUR</span><small>Et fleksibelt format, der kan udvikles til den konkrete målgruppe og udfordring.</small></div></div>
     </section>
 
-    <section class="formats">
-      <div class="section-heading">
-        <span class="section-label">05 / HVAD KAN VI LAVE SAMMEN?</span>
-        <h2>Ingen pakkeløsning.<br>Et konkret problem først.</h2>
-      </div>
-      <div class="format-grid">
-        <div class="format"><span>01</span><h3>Rådgivning</h3><p>Et konkret udviklingsproblem, hvor I har brug for et ekstra blik, analyse og fremdrift.</p></div>
-        <div class="format"><span>02</span><h3>Idé- & konceptudvikling</h3><p>Fra spæd idé til kvalificeret koncept, der kan testes, bygges eller præsenteres.</p></div>
-        <div class="format"><span>03</span><h3>Workshops & facilitering</h3><p>Strukturerede rum, hvor mennesker sammen skal forstå, udvikle, vælge eller skabe noget.</p></div>
-        <div class="format"><span>04</span><h3>CV-Rystetur</h3><p>Et gennemprøvet format for sparring og fællesskab – som også kan tilpasses en konkret målgruppe eller udfordring.</p></div>
-      </div>
-    </section>
-
-    <section class="rystetur" id="rystetur">
-      <div class="rystetur-top">
-        <div>
-          <span class="section-label">06 / MIT EGET KONCEPT</span>
-          <p class="rystetur-word">RYSTETUR</p>
-        </div>
-        <span class="rystetur-arrow">↗</span>
-      </div>
-      <div class="rystetur-main">
-        <div>
-          <h2>Et format til at få mennesker til at <em>se noget på en ny måde.</em></h2>
-          <p>CV-Rystetur blev skabt, fordi jeg så et behov: jobsøgende havde brug for mere end at sidde alene med deres CV. De havde brug for andre mennesker, ærlig sparring og nye perspektiver.</p>
-          <p>Formatet er simpelt: mennesker mødes i små grupper, deler erfaringer og giver hinanden konkrete perspektiver. Det virker, fordi folk selv er en del af løsningen.</p>
-          <div class="rystetur-stats"><span><b>6 → 60</b> deltagere</span><span><b>100.000+</b> LinkedIn-visninger</span><span><b>GRATIS</b> for deltagerne</span></div>
-        </div>
-        <div class="rystetur-card">
-          <div class="rystetur-card-inner">
-            <span>INDSÆT PROBLEM</span>
-            <strong>→</strong>
-            <span>RYSTETUR</span>
-            <small>Et fleksibelt format, der kan udvikles til den konkrete målgruppe og udfordring.</small>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about" id="mig">
-      <div class="about-copy">
-        <span class="section-label">07 / HVEM ER CHRIS?</span>
-        <h2>Jeg kan godt lide det, der endnu ikke er færdigt.</h2>
-        <p>Jeg har arbejdet med forretningsudvikling, analyse, salg, organisation, processer, idéudvikling og mennesker. På tværs af brancher har der været én rød tråd: Jeg bliver engageret, når noget skal udvikles.</p>
-        <p>Jeg er ikke den, der nødvendigvis har svaret, før vi begynder. Jeg er den, der gerne vil forstå problemet, finde de rigtige mennesker, stille de besværlige spørgsmål og være med til at bygge svaret.</p>
-        <p class="about-sign">Chris<br><span>Problemløser · Idémager · Relationsskaber</span></p>
-      </div>
-      <div class="about-image">
-        <img src="chris-smile.jpeg" alt="Chris Stegemejer Roliggaard" loading="lazy">
-      </div>
-    </section>
-
-    <section class="book" id="book">
-      <div class="book-no">08</div>
-      <div class="book-copy">
-        <span class="section-label">SKAL VI SE, HVAD DER ER MULIGT?</span>
-        <h2>Har I en idé, et problem eller en mulighed?</h2>
-        <p>30 minutter. Ingen salgstale. Fortæl mig, hvad I tumler med, hvad I gerne vil skabe, eller hvor I sidder fast. Så finder vi sammen ud af, om jeg kan hjælpe.</p>
-        <a class="button button-light" id="bookingButton" href="#booking-note">BOOK 30 MIN. <span>↗</span></a>
-        <p class="booking-note" id="booking-note">Bookinglinket sættes ind her, når du har valgt kalenderløsning (fx Cal.com, Calendly eller Microsoft Bookings).</p>
-      </div>
-      <img class="book-image" src="chris-hero.jpeg" alt="" loading="lazy">
-    </section>
+    <section class="book section-pad" id="book">
+      <div class="book-copy"><div class="section-kicker">06 / SKAL VI SE, HVAD DER ER MULIGT?</div><h2>Har I noget, der skal flytte sig?</h2><p>30 minutter. Ingen salgstale og ingen forpligtelser.</p><p>Fortæl mig, hvad I tumler med, hvad I gerne vil skabe, eller hvor I sidder fast. Så finder vi sammen ud af, om jeg er den rigtige til at hjælpe.</p><a class="button button-light" href="#booking-area">BOOK 30 MIN. MØDE <span>↗</span></a><p class="trust-note">Hvis jeg ikke er den rigtige til opgaven, siger jeg det med det samme.</p></div><div class="booking-area" id="booking-area"><div class="booking-placeholder"><span>BOOKING</span><h3>Google Calendar-linket kommer her.</h3><p>Opret din 30-minutters aftaleplan i Google Calendar. Når du har linket, indsætter vi det direkte i knappen.</p><span class="booking-status">KLAR TIL GOOGLE BOOKING</span></div></div></section>
   </main>
 
-  <footer>
-    <div class="footer-brand">CHRIS STEGEMEJER ROLIGGAARD</div>
-    <div class="footer-mid">PROBLEMLØSER · IDÉMAGER · RELATIONSSKABER</div>
-    <div class="footer-links">
-      <a href="#top">↑ Til toppen</a>
-      <a href="#rystetur">CV-Rystetur</a>
-      <a href="#book">Book 30 min.</a>
-    </div>
-    <p class="footer-small">© <span id="year"></span> Chris Stegemejer Roliggaard</p>
-  </footer>
-
+  <footer><div class="footer-brand">CHRIS STEGEMEJER ROLIGGAARD</div><div class="footer-pills"><span>PROBLEMLØSER</span><span>IDÉMAGER</span><span>RELATIONSSKABER</span></div><a href="#top">↑ Til toppen</a><p>© <span id="year"></span> Chris Stegemejer Roliggaard</p></footer>
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,36 +1,27 @@
-# Chris Stegemejer Roliggaard — version 2.1
+# Chris Stegemejer Roliggaard — hjemmeside, version 2.5
 
-Statisk GitHub Pages-side til Chris Stegemejer Roliggaard.
+Statisk hjemmeside til GitHub Pages. Upload indholdet af denne mappe til roden af dit repository. Behold `index.html`, `styles.css`, `script.js` og begge billedfiler i samme mappe.
 
-## Filer
+## Det er udfyldt
+- E-mail: Roligaard@gmail.com
+- Telefon: +45 81 34 56 78
+- LinkedIn: https://www.linkedin.com/in/chrisroliggaard/
+- Målgruppe: ledere, iværksættere og organisationer i udvikling, fra mindre virksomheder og scale-ups til etablerede virksomheder, NGO’er og uddannelsesorganisationer.
+- Erfaring: mere end 20 års erhvervserfaring med forretnings- og organisationsudvikling, procesforbedring, innovation og kommerciel udvikling.
+- Rystetur-eksempel: samle medarbejdere om en udfordring, få forskellige perspektiver frem og vælge konkrete næste skridt.
+- Tre udtalelser: Martin Kim Sun Shik Nielsen (GladTeknik), Andreas Papadakis (LoveSpring) og Mikkel Skov-Petersen (Hangtime Event).
 
-- `index.html` — sidens struktur og tekst
-- `styles.css` — design, layout og mobilresponsivitet
-- `script.js` — mobilmenu og automatisk årstal i footer
-- `chris-hero.jpeg` — hero-billede
-- `chris-full.jpeg` — billede i Om Chris-sektionen
-- `chris-smile.jpeg` — ekstra billede, klar til senere brug
+## Pladsholdere, der stadig skal afklares
+1. `[MIT GOOGLE CALENDAR-LINK]` — indsæt dit faktiske bookinglink. Det er fortsat en pladsholder, så bookingknappen virker ikke som booking, før den er udskiftet.
+2. `[TID]` — tidsrammen for fastholdelsescasen og CV-Rystetur. Indsæt kun årstal/tidsrammer, du kan dokumentere.
+3. `[TYPISK VARIGHED/OMFANG]` — beskriv et realistisk typisk rådgivningsforløb. De mulige formater på 60–90 minutter, 1–2 uger og 4–12 uger er forslag, ikke dokumenterede standardydelser, så de er ikke indsat som fakta.
 
-## Vigtigste ændringer i version 2.1
+CVR-feltet er udeladt, da der ikke er oplyst et relevant CVR-nummer.
 
-- Heroen er strammet, så værdiforslaget kommer tidligere frem på skærmen.
-- Problemsektionens højre tekst er gjort mere konkret.
-- Introen til hjælpesektionen er gjort mere direkte.
-- Om Chris-teksten er gjort mindre CV-agtig.
-- Rystetur-kortet forklarer tydeligere, hvad formatet gør.
-- Det eksisterende design, farveunivers og layout er bevaret.
-
-## Google Calendar-booking
-
-Siden er klar til den endelige booking-URL. Der skal kun indsættes den faktiske Google Calendar-booking-URL på de to `BOOK 30 MIN. MØDE`-knapper. Den må ikke opfindes eller erstattes af en generisk Google Calendar-adresse.
-
-## GitHub Pages
-
-Publicér fra:
-
-- Branch: `main`
-- Folder: `/ (root)`
-
-## Ekstern afhængighed
-
-Siden bruger Google Fonts. Selve siden er ellers statisk HTML/CSS/JavaScript.
+## Vigtige redaktionelle noter
+- De tre eksisterende resultatcases og deres tal/tekster er bevaret. Derfor er Jyllands-Posten-casen ikke sat ind som erstatning for fastholdelsescasen; det ville ændre de tidligere aftalte cases.
+- Tidsrammen for fastholdelsescasen er ikke fastslået i de input, der blev givet, og står derfor som pladsholder.
+- Tidsrammen for CV-Rystetur står som pladsholder, indtil den kan bekræftes.
+- Tallet 100.000+ LinkedIn-visninger er bevaret som ønsket; kontrollér, at det kan dokumenteres.
+- Kontrollér, at de tre personer er indforståede med, at deres citater, navne og titler offentliggøres.
+- Alle bookingknapper på siden peger på sektionen `#book`. Bookinglinket i sektionen åbner i en ny fane med `rel="noopener"`.

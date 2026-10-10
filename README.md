@@ -1,13 +1,12 @@
-# Chris Roliggaard — hjemmeside v4.1
+# Chris Roliggaard — hjemmeside v4.2
 
-Pakken indeholder den nye HTML fra brugerens udkast, CSS baseret på det fremsendte styles-udkast, en mobilmenu i JavaScript samt de eksisterende portrætbilleder.
+Denne pakke samler én konsistent version af hjemmesiden.
 
-## Publicering
-Upload filerne direkte til roden af GitHub Pages-repository'et. Sørg for at `index.html`, `styles.css`, `script.js`, `chris-hero.jpg` og `chris-about.jpg` ligger på samme niveau.
+Vigtigt:
+- Upload alle filer direkte til repository-roden, ikke ind i en undermappe.
+- `index.html` indeholder også en indlejret CSS-fallback, så layoutet ikke falder tilbage til browserens standardstil, hvis `styles.css` ikke indlæses.
+- `styles.css` ligger stadig ved siden af index-filen og bruges til fremtidige ændringer.
+- Stylesheet-linket har versionsparameter for at mindske risikoen for gammel cache.
+- Kontaktknapperne åbner e-mail til roliggaard@gmail.com. Der er ikke opfundet et bookinglink.
 
-## Rettelser i denne version
-- Kontaktknapper bruger `roliggaard@gmail.com` i stedet for en eksempeladresse.
-- Teksten lover ikke længere, at man kan booke 30 minutter, når der ikke er oplyst et bookinglink.
-- Mobilnavigationen kan åbnes og lukkes.
-- Rettet to overskrifter, der var markeret som brødtekst, samt stavefejlen “Tilbagevendendebovlen”.
-- Der er ikke tilføjet nye CV-fakta eller nye resultater.
+Filer: index.html, styles.css, script.js, chris-hero.jpg, chris-about.jpg.

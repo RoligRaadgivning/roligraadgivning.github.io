@@ -1,20 +1,13 @@
-# Chris Stegemejer Roliggaard — hjemmeside v4.0
+# Chris Roliggaard — hjemmeside v4.1
 
-## Upload til GitHub Pages
-Upload INDHOLDET af denne mappe direkte til roden af repository'et `roligraadgivning.github.io`.
-Følgende filer skal ligge på samme niveau i repository'et:
-- `index.html`
-- `styles.css`
-- `script.js`
-- `chris-hero.jpg`
-- `chris-about.jpg`
+Pakken indeholder den nye HTML fra brugerens udkast, CSS baseret på det fremsendte styles-udkast, en mobilmenu i JavaScript samt de eksisterende portrætbilleder.
 
-Upload ikke selve mappen som en undermappe.
+## Publicering
+Upload filerne direkte til roden af GitHub Pages-repository'et. Sørg for at `index.html`, `styles.css`, `script.js`, `chris-hero.jpg` og `chris-about.jpg` ligger på samme niveau.
 
-## Inden publicering
-- Kontaktknappen åbner en e-mail til `roliggaard@gmail.com`.
-- Der er ikke indsat et bookinglink, da et faktisk bookinglink ikke er oplyst.
-- GitHub Pages skal være sat til branch `main`, folder `/(root)`.
-
-## Indhold og design
-Version 4.0 skifter fra mørkt, redaktionelt design til et farverigt, legende og professionelt udtryk. Siden prioriterer konkrete udfordringer, måder at hjælpe på, dokumenterede eksempler og en enkel invitation til dialog.
+## Rettelser i denne version
+- Kontaktknapper bruger `roliggaard@gmail.com` i stedet for en eksempeladresse.
+- Teksten lover ikke længere, at man kan booke 30 minutter, når der ikke er oplyst et bookinglink.
+- Mobilnavigationen kan åbnes og lukkes.
+- Rettet to overskrifter, der var markeret som brødtekst, samt stavefejlen “Tilbagevendendebovlen”.
+- Der er ikke tilføjet nye CV-fakta eller nye resultater.

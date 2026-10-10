@@ -1,174 +1,194 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Chris Stegemejer Roliggaard hjælper med forretningsudvikling, problemløsning og forbedringer på tværs af mennesker, data og processer.">
-  <meta name="theme-color" content="#f7f3e9">
-  <title>Chris Stegemejer Roliggaard — Fra idé til handling</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chris Stegemejer Roliggaard hjælper virksomheder og organisationer med forretningsudvikling, problemløsning og at omsætte idéer til handling.">
+    <title>Chris Roliggaard | Strategi, Udvikling & Eksekvering</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Chris Stegemejer Roliggaard, top"><span class="brand-mark">C<span>↗</span></span><span class="brand-name">CHRIS ROLIGGAARD</span></a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Åbn menu"><span></span><span></span></button>
-    <nav class="site-nav" id="site-nav" aria-label="Hovednavigation">
-      <a href="#saadan-hjaelper">Det jeg hjælper med</a>
-      <a href="#resultater">Resultater</a>
-      <a href="#erfaring">Erfaring</a>
-      <a class="nav-cta" href="#kontakt">Tag en snak <span>↗</span></a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero page-shell" id="om-mig">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-dot"></span> FORRETNING · MENNESKER · FREMDIFT</p>
-        <h1>Jeg finder<br>mulighederne<span class="period">.</span><br><em>Og får dem til</em><br><em>at ske.</em></h1>
-        <p class="hero-intro">Jeg hjælper med at forstå komplekse udfordringer, udvikle nye muligheder og omsætte idéer til forbedringer, der virker i praksis.</p>
-        <div class="hero-actions">
-          <a class="button button-dark" href="#kontakt">Tal med mig om en udfordring <span>↗</span></a>
-          <a class="text-link" href="#resultater">Se konkrete resultater <span>↓</span></a>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Chris Roliggaard</a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Åbn menu"><span></span><span></span></button>
+            <nav class="nav-links" id="site-nav" aria-label="Hovednavigation">
+                <a href="#problemet">Udfordringen</a>
+                <a href="#tilgang">Tilgang</a>
+                <a href="#resultater">Resultater</a>
+                <a href="#om-mig">Om Chris</a>
+            </nav>
+            <a href="#kontakt" class="btn btn-outline">Tag en dialog →</a>
         </div>
-        <div class="hero-proof"><span class="proof-star">✳</span><span>Problemløser</span><span class="proof-sep">/</span><span>Idémager</span><span class="proof-sep">/</span><span>Relationsskaber</span></div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-photo-frame"><img class="hero-photo" src="chris-hero.jpg" alt="Portræt af Chris Stegemejer Roliggaard" fetchpriority="high"></div>
-        <div class="sticker sticker-yellow"><span>GODE SPØRGSMÅL</span><strong>→</strong><span>BEDRE LØSNINGER</span></div>
-        <div class="hero-scribble" aria-hidden="true">+</div>
-        <p class="visual-caption">AARHUS, DANMARK <span>·</span> Nysgerrig af natur</p>
-      </div>
-      <div class="hero-bottom-note">STRATEGI ER FØRST NOGET VÆRD, NÅR DEN BLIVER TIL HANDLING.</div>
-    </section>
+    </header>
 
-    <section class="problem-band">
-      <div class="section-shell problem-inner">
-        <p class="eyebrow">MÅSKE KENDER DU DET?</p>
-        <div class="problem-grid">
-          <h2>Der er masser af potentiale.<br><em>Men noget står i vejen.</em></h2>
-          <div class="problem-list">
-            <p><span>01</span> Gode idéer bliver ikke omsat til handling.</p>
-            <p><span>02</span> Processer og systemer gør tingene mere besværlige end nødvendigt.</p>
-            <p><span>03</span> Data, kunder og medarbejdere fortæller ikke den samme historie.</p>
-          </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="badge">Strategisk sparring, udvikling & eksekvering</div>
+                <h1>Jeg finder mulighederne.<br>Samler menneskerne.<br><span class="highlight">Får tingene til at ske.</span></h1>
+                <p class="hero-subtitle">Jeg hjælper virksomheder og organisationer med at forstå komplekse udfordringer, finde nye veje og omsætte idéer til forbedringer, der virker i praksis.</p>
+                <div class="hero-cta">
+                    <a href="#kontakt" class="btn btn-primary btn-large">Tal med mig om en udfordring →</a>
+                    <span class="cta-note">Ingen salgstale eller forpligtelser. Vi finder ud af, om jeg er den rette til at hjælpe.</span>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="chris-hero.jpg" alt="Chris Roliggaard" class="hero-img" />
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="services section-shell" id="saadan-hjaelper">
-      <div class="section-heading">
-        <p class="eyebrow">01 / DET JEG HJÆLPER MED</p>
-        <h2>Fra “hvad nu?”<br><em>til “lad os gøre det”.</em></h2>
-        <p class="heading-copy">Jeg går undersøgende til værks, samler perspektiver og hjælper med at finde en vej, der både giver mening på papiret og kan fungere i hverdagen.</p>
-      </div>
-      <div class="service-grid">
-        <article class="service-card card-blue">
-          <div class="card-top"><span>01</span><span class="card-symbol">⌕</span></div>
-          <h3>Forstå<br>problemet.</h3>
-          <p>Skab overblik over, hvad der reelt spænder ben — gennem analyse af data, arbejdsgange, kunderejser og de mennesker, der møder dem.</p>
-          <div class="card-tags"><span>Analyse</span><span>Indsigt</span><span>Problemløsning</span></div>
-        </article>
-        <article class="service-card card-coral">
-          <div class="card-top"><span>02</span><span class="card-symbol">✳</span></div>
-          <h3>Udvikle<br>mulighederne.</h3>
-          <p>Find nye veje, udvikl koncepter og skab fælles retning på tværs af fagligheder, teams og interesser.</p>
-          <div class="card-tags"><span>Forretningsudvikling</span><span>Koncept</span><span>Facilitering</span></div>
-        </article>
-        <article class="service-card card-lime">
-          <div class="card-top"><span>03</span><span class="card-symbol">↗</span></div>
-          <h3>Få det til<br>at ske.</h3>
-          <p>Omsæt ambitioner til konkrete forbedringer, tydelige processer og opfølgning, så idéerne ikke stopper ved mødet.</p>
-          <div class="card-tags"><span>Implementering</span><span>Procesforbedring</span><span>Fremdrift</span></div>
-        </article>
-      </div>
-      <p class="services-note"><span class="note-mark">✳</span> Opgaven bestemmer formen: sparring, analyse, facilitering eller en mere hands-on projektrolle.</p>
+    <!-- 01 · Genkend problemet -->
+    <section id="problemet" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01 · Udfordringen</span>
+                <h2>Måske er problemet ikke mangel på idéer</h2>
+                <p class="section-lead">Ofte er det noget helt andet i organisationen, processerne eller samarbejdet, der spænder ben for fremdriften.</p>
+            </div>
+            <div class="pain-points-grid">
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Uklart udgangspunkt</h3>
+                    <p>I ved, at noget skal ændres – men det er svært at præcisere, hvor knuden reelt sidder.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔄</div>
+                    <h3>Tilbagevendende bøvl</h3>
+                    <p>Problemerne bliver ved med at vende tilbage, selvom I har forsøgt at løse dem før.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💡</div>
+                    <h3>Manglende eksekvering</h3>
+                    <p>I har gode idéer og potentiale, men de kommer ikke rigtigt videre fra skrivebordet.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👥</div>
+                    <h3>Siloer og modstand</h3>
+                    <p>Forskellige afdelinger og faggrupper har svært ved at tænke og skabe en fælles retning.</p>
+                </div>
+                <div class="card card-highlight">
+                    <h3>Der er brug for at få mennesker til at tænke sammen</h3>
+                    <p>Når forskellige perspektiver samles og struktureres konstruktivt, kommer I fra snak til en konkret vej videre. Det er dér, jeg kommer ind i billedet.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="results section-shell" id="resultater">
-      <div class="section-heading result-heading">
-        <p class="eyebrow">02 / EKSEMPLER FRA VIRKELIGHEDEN</p>
-        <h2>Det skal kunne<br><em>mærkes.</em></h2>
-        <p class="heading-copy">Jeg tror mere på konkrete eksempler end store ord. Her er tre resultater og initiativer fra mit arbejde.</p>
-      </div>
-      <div class="result-grid">
-        <article class="result-card result-call">
-          <div class="result-number">20 % <span>→</span> <strong>&lt;1 %</strong></div>
-          <p class="result-kicker">FOLKEKIRKENS NØDHJÆLP</p>
-          <h3>Færre ubesvarede opkald</h3>
-          <p>Analyse af data, systemer, arbejdsgange og medarbejdere var med til at reducere andelen af ubesvarede opkald fra omkring 20 % til under 1 %.</p>
-          <span class="result-index">CASE 01</span>
-        </article>
-        <article class="result-card result-retention">
-          <div class="result-number">3 mdr. <span>→</span> <strong>~2 år</strong></div>
-          <p class="result-kicker">FOLKEKIRKENS NØDHJÆLP</p>
-          <h3>Bedre fastholdelse</h3>
-          <p>Ændringer i rammer, opgaver, fællesskab og udviklingsmuligheder var med til at ændre en fastholdelse på omkring tre måneder til næsten to år.</p>
-          <span class="result-index">CASE 02</span>
-        </article>
-        <article class="result-card result-rystetur">
-          <div class="result-number">6 <span>→</span> <strong>60</strong></div>
-          <p class="result-kicker">CV-RYSTETUR</p>
-          <h3>Fra lille initiativ til fællesskab</h3>
-          <p>Et gratis initiativ for jobsøgende voksede gennem konceptudvikling, facilitering, partnerskaber og kommunikation.</p>
-          <span class="result-index">CASE 03</span>
-        </article>
-      </div>
-      <p class="fine-print">Resultaterne er eksempler fra konkrete sammenhænge. De er ikke en garanti for, at en anden opgave giver samme effekt.</p>
+    <!-- 02 · Vis, hvordan du hjælper -->
+    <section id="tilgang" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02 · Arbejdsform</span>
+                <h2>Sådan hjælper jeg jer videre</h2>
+                <p class="section-lead">Ingen tunge standardkasser eller teoretiske slide-decks. Jeg undersøger, udfordrer og udvikler sammen med de mennesker, der skal få løsningen til at leve.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-step">Fase 01</div>
+                    <h3>🔍 Find det reelle problem</h3>
+                    <p class="service-sub">Når årsagen ikke er så enkel, som den ser ud.</p>
+                    <p>Jeg går bag om symptomerne, samler data, observerer arbejdsgange og lytter til organisationen, så I bruger kræfterne på at løse det rigtige problem.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-step">Fase 02</div>
+                    <h3>💡 Udvikl & kvalificer mulighederne</h3>
+                    <p class="service-sub">Når I har idéen, men mangler retning.</p>
+                    <p>Jeg hjælper med at udfordre og kvalificere potentialet og omsætte det til et skarpt, overskueligt koncept, I rent faktisk kan handle på.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-step">Fase 03</div>
+                    <h3>🚀 Omsæt til konkret handling</h3>
+                    <p class="service-sub">Når beslutningen er taget, og det skal virke.</p>
+                    <p>Jeg designer og faciliterer processer, skaber struktur og involverer de rigtige mennesker, så forandringen forankres bæredygtigt i driften.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="about section-shell" id="om-tilgangen">
-      <div class="about-image"><img src="chris-about.jpg" alt="Chris Stegemejer Roliggaard" loading="lazy"><span class="image-stamp">MENNESKER<br>FØRST. ALTID.</span></div>
-      <div class="about-copy">
-        <p class="eyebrow">03 / MIN TILGANG</p>
-        <h2>Jeg er nysgerrig på både <em>systemet</em> og menneskene i det.</h2>
-        <p>Jeg arbejder i krydsfeltet mellem forretning, mennesker, data og processer. Jeg trives, når en organisation vil noget mere, men har brug for at forstå, hvad der står i vejen — og hvordan ambitionerne bliver til handling.</p>
-        <p>Min tilgang er undersøgende og praktisk: forstå situationen, få de rigtige perspektiver frem, skabe en retning og hjælpe med at få den til at fungere i virkeligheden.</p>
-        <div class="approach-points"><p><span>↗</span> Jeg stiller spørgsmål, før jeg foreslår løsninger.</p><p><span>↗</span> Jeg forbinder analyse med hverdagen.</p><p><span>↗</span> Jeg tror på, at resultater skabes sammen med mennesker.</p></div>
-      </div>
+    <!-- 03 · Dokumenterede resultater -->
+    <section id="resultater" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03 · Dokumentation</span>
+                <h2>Det er ikke kun ord</h2>
+                <p class="section-lead">Konkrete eksempler på forandringer og resultater skabt gennem fokuseret indsats:</p>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card">
+                    <div class="case-badge">Driftsoptimering</div>
+                    <div class="case-stats">20 % → under 1 %</div>
+                    <h3>Ubesvarede opkald i kundeservice</h3>
+                    <p>Gennem dybdegående analyse af data, systemer, arbejdsgange og medarbejdernes rammer blev andelen af tabte opkald reduceret markant, og kundeoplevelsen blev løftet.</p>
+                </div>
+                <div class="case-card">
+                    <div class="case-badge">Kultur & Fastholdelse</div>
+                    <div class="case-stats">3 mdr. → næsten 2 år</div>
+                    <h3>Medarbejderfastholdelse & trivsel</h3>
+                    <p>Gennem ændringer i rammer, opgaver, fællesskab og udviklingsmuligheder blev fastholdelsen af medarbejdere flerdoblet over tid.</p>
+                </div>
+                <div class="case-card">
+                    <div class="case-badge">Koncept & Partnerskaber</div>
+                    <div class="case-stats">6 → 60 deltagere</div>
+                    <h3>CV-Rystetur (Gratis netværksinitiativ)</h3>
+                    <p>Voksede fra seks personer omkring et bord til 60 deltagere gennem stærk konceptudvikling, facilitering og kommunikation for at skabe jobmuligheder.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="experience section-shell" id="erfaring">
-      <div class="section-heading">
-        <p class="eyebrow">04 / ERFARING I PRAKSIS</p>
-        <h2>Bred erfaring.<br><em>Praktisk blik.</em></h2>
-        <p class="heading-copy">Kommerciel forståelse og udvikling på tværs af organisationer, roller og samarbejder.</p>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item"><div class="timeline-date">2025—2026</div><div class="timeline-main"><h3>Business Development Specialist</h3><p class="company">GladTeknik A/S</p><p>Arbejdede med sammenhæng mellem salg, kundeservice, CRM, data og processer — herunder salgsprocesser, datakvalitet, kunderejser og tværgående samarbejde.</p></div><span class="timeline-tag">Forretningsudvikling</span></article>
-        <article class="timeline-item"><div class="timeline-date">2023—2024</div><div class="timeline-main"><h3>Chef for Direkte Salg &amp; B2B</h3><p class="company">Jyllands-Posten</p><p>Byggede en ny salgsorganisation op fra bunden til 27 medarbejdere og etablerede struktur for rekruttering, coaching, performance og salgsprocesser. Omsætningen voksede cirka 25 %, og den digitale portefølje cirka 30 %.</p></div><span class="timeline-tag">Organisation &amp; vækst</span></article>
-        <article class="timeline-item"><div class="timeline-date">2019—2022</div><div class="timeline-main"><h3>Leder af Field &amp; Telemarketing</h3><p class="company">Folkekirkens Nødhjælp</p><p>Arbejdede med datadrevet ledelse, coaching, kvalitet, medarbejderudvikling og forbedring af kundeoplevelser og arbejdsgange.</p></div><span class="timeline-tag">Mennesker &amp; performance</span></article>
-        <article class="timeline-item"><div class="timeline-date">Tidligere</div><div class="timeline-main"><h3>Forretningsudvikling, iværksætteri og partnerskaber</h3><p class="company">GreenSpeak · ByBanzai · AGF m.fl.</p><p>Udviklede koncepter, samarbejder og nye initiativer — fra de første idéer til konkrete aktiviteter og løsninger.</p></div><span class="timeline-tag">Idé til handling</span></article>
-      </div>
+    <!-- 04 · Mød Chris -->
+    <section id="om-mig" class="section about-section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <span class="section-number">04 · Profilen</span>
+                <h2>Hvem er Chris?</h2>
+                <p class="about-lead">Jeg kan godt lide det, der endnu ikke er helt færdigt.</p>
+                <p>Med over 15 års erfaring inden for forretningsudvikling, organisation, salg, analyse og kommercialisering brænder jeg for at skabe struktur i komplekse miljøer.</p>
+                <p>Jeg kommer ikke med et færdigt standardsvar på alt. Men jeg er vant til at træde ind i situationer, hvor løsningen ikke ligger klar på forhånd – og sammen med organisationen finde ud af, hvad der skal til for at komme videre.</p>
+                <p>Jeg trives bedst i krydsfeltet mellem <strong>Mennesker, Forretning, Data og Eksekvering</strong>.</p>
+                <div class="tags">
+                    <span class="tag">PROBLEMLØSER</span>
+                    <span class="tag">IDÉMAGER</span>
+                    <span class="tag">RELATIONSSKABER</span>
+                </div>
+            </div>
+            <div class="about-image-wrapper">
+                <img src="chris-about.jpg" alt="Chris Roliggaard" class="about-img" />
+            </div>
+        </div>
     </section>
 
-    <section class="skills section-shell" id="kompetencer">
-      <div class="skills-head"><div><p class="eyebrow">05 / VÆRKTØJSKASSEN</p><h2>Forskellige briller.<br><em>Ét fælles mål.</em></h2></div><p>Jeg har mere end 20 års erhvervserfaring med forretnings- og organisationsudvikling, procesforbedring, innovation og kommerciel udvikling — på tværs af virksomheder, NGO’er og iværksætteri.</p></div>
-      <div class="skill-list"><span>Forretningsudvikling</span><span>Commercial Excellence</span><span>Strategi til handling</span><span>Procesforbedring</span><span>CRM &amp; kunderejser</span><span>Data og analyse</span><span>Facilitering &amp; workshops</span><span>Partnerskaber</span><span>Konceptudvikling</span><span>Organisationsudvikling</span></div>
-      <div class="testimonials-heading"><p class="eyebrow">ORD FRA ANDRE</p><p>Det er ikke kun mig, der skal sige det.</p></div>
-      <div class="quote-grid">
-        <blockquote class="quote-blue"><span class="quote-mark">“</span><p>Hvis du ønsker en nøgtern topdown analyse af et segment, en proces eller andet i din forretning, så kan jeg ikke komme på nogen bedre til rollen end Chris.</p><footer><strong>Martin Kim Sun Shik Nielsen</strong><span>CSO, GladTeknik A/S</span></footer></blockquote>
-        <blockquote class="quote-coral"><span class="quote-mark">“</span><p>Han er kreativ og formår at manifestere idéer, der i starten ser vilde ud.</p><footer><strong>Andreas Papadakis</strong><span>Founder, LoveSpring – Water for water</span></footer></blockquote>
-        <blockquote class="quote-lime"><span class="quote-mark">“</span><p>En af hans største styrker er, at han også formår at følge op på tingene og følge idéer og projekter til dørs.</p><footer><strong>Mikkel Skov-Petersen</strong><span>Ejer, Hangtime Event</span></footer></blockquote>
-      </div>
+    <!-- 05 · Gør næste skridt enkelt -->
+    <section id="kontakt" class="section cta-section">
+        <div class="container text-center">
+            <span class="section-number">05 · Næste skridt</span>
+            <h2>Har I noget, der skal flytte sig?</h2>
+            <p class="cta-lead">30 minutter. Ingen salgstale. Ingen forpligtelser.</p>
+            <p class="cta-desc">Fortæl mig, hvad I tumler med, hvad I ønsker at skabe, eller hvor I sidder fast. Så finder vi ud af, om jeg kan hjælpe – eller peger jer videre i den rigtige retning.</p>
+            
+            <div class="cta-box">
+                <a href="mailto:roliggaard@gmail.com?subject=En%20udfordring%20vi%20skal%20se%20p%C3%A5" class="btn btn-primary btn-large">Start en dialog på e-mail →</a>
+                <p class="cta-disclaimer">Skriv til <a href="mailto:roliggaard@gmail.com">roliggaard@gmail.com</a> eller find mig på <a href="https://www.linkedin.com/in/chrisroliggaard/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+            </div>
+        </div>
     </section>
 
-    <section class="contact section-shell" id="kontakt">
-      <div class="contact-shape shape-one" aria-hidden="true">✳</div>
-      <div class="contact-content">
-        <p class="eyebrow">06 / SKAL VI FINDE EN VEJ?</p>
-        <h2>Fortæl mig,<br>hvad der <em>driller.</em></h2>
-        <p class="contact-intro">Har I en udfordring, en idé eller et projekt, der skal flytte sig? Skriv et par linjer om det. Så finder vi ud af, om jeg er den rette til at hjælpe — eller om jeg kan pege jer i en anden retning.</p>
-        <div class="contact-actions"><a class="button button-light" href="mailto:roliggaard@gmail.com?subject=En%20udfordring%20vi%20skal%20se%20p%C3%A5">Start en samtale <span>↗</span></a><a class="contact-link" href="https://www.linkedin.com/in/chrisroliggaard/" target="_blank" rel="noopener noreferrer">Eller find mig på LinkedIn ↗</a></div>
-        <p class="contact-details-note">Chris Stegemejer Roliggaard <span>·</span> Aarhus, Danmark <span>·</span> <a href="tel:+4581345678">+45 81 34 56 78</a> <span>·</span> <a href="mailto:roliggaard@gmail.com">roliggaard@gmail.com</a></p>
-      </div>
-      <div class="contact-doodle" aria-hidden="true"><span>GODT</span><span>SPØRGSMÅL</span><span>→</span></div>
-    </section>
-  </main>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-flex">
+            <p>&copy; 2026 Chris Roliggaard. Alle rettigheder forbeholdes.</p>
+            <p>Skødstrup, Danmark</p>
+        </div>
+    </footer>
 
-  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">C<span>↗</span></span><span class="brand-name">CHRIS ROLIGGAARD</span></a><p>Forretning, mennesker og idéer i bevægelse.</p><a href="#top">Til toppen ↑</a><small>© <span id="year"></span> Chris Stegemejer Roliggaard</small></footer>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

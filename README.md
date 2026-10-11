@@ -1,12 +1,20 @@
-# Chris Roliggaard — hjemmeside v4.2
+# Chris Roliggaard – hjemmeside v5.0
 
-Denne pakke samler én konsistent version af hjemmesiden.
+Filerne i denne mappe er klar til GitHub Pages.
 
-Vigtigt:
-- Upload alle filer direkte til repository-roden, ikke ind i en undermappe.
-- `index.html` indeholder også en indlejret CSS-fallback, så layoutet ikke falder tilbage til browserens standardstil, hvis `styles.css` ikke indlæses.
-- `styles.css` ligger stadig ved siden af index-filen og bruges til fremtidige ændringer.
-- Stylesheet-linket har versionsparameter for at mindske risikoen for gammel cache.
-- Kontaktknapperne åbner e-mail til roliggaard@gmail.com. Der er ikke opfundet et bookinglink.
+## Upload
+1. Gå til repository `roligraadgivning.github.io`.
+2. Upload alle filer fra denne mappe direkte i repository-roden (ikke i en undermappe).
+3. Erstat `index.html`, `styles.css` og `script.js`, hvis GitHub spørger.
+4. Behold de to billedfiler `chris-hero.jpg` og `chris-about.jpg`.
+5. Vent på GitHub Pages, og genindlæs siden. `index.html` har også indbygget CSS som reserve, så siden ikke bliver helt ustylet, hvis `styles.css` fejler.
 
-Filer: index.html, styles.css, script.js, chris-hero.jpg, chris-about.jpg.
+## Indhold
+- Primær gren: forretningsudvikling og strategisk sparring.
+- Sekundær gren: workshops og facilitering, med CV-Rystetur som konkret koncept.
+- Druiden og private fritidsinteresser er fjernet.
+- Kontakt: roliggaard@gmail.com.
+- LinkedIn: https://www.linkedin.com/in/chrisroliggaard/
+
+## Bemærk
+CV-Rystetur beskrives som gratis for deltagerne. Der loves ikke en bestemt pris eller prismodel for samarbejdspartnere.

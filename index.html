@@ -1,311 +1,347 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chris Stegemejer Roliggaard hjælper virksomheder og organisationer med forretningsudvikling, problemløsning og at omsætte idéer til handling.">
-    <title>Chris Roliggaard | Strategi, Udvikling & Eksekvering</title>
-    <link rel="stylesheet" href="styles.css?v=4.2">
-    <style id="site-style-fallback">
-/* CSS fra brugerens udkast, med supplerende mobilmenu og små tilgængelighedsforbedringer. */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfaf7">
+  <meta name="description" content="Chris Roliggaard hjælper virksomheder med forretningsudvikling, kundeoplevelser og at omsætte strategi til handling. Workshops og CV-Rystetur.">
+  <title>Chris Roliggaard | Forretningsudvikling, der virker</title>
+  <link rel="stylesheet" href="styles.css?v=5.0">
+  <style id="site-style-fallback">
 :root {
-    --bg-color:#fff; --bg-light:#f8fafc; --text-main:#0f172a; --text-muted:#475569;
-    --primary:#0284c7; --primary-dark:#0369a1; --border-color:#e2e8f0; --card-bg:#fff;
-    --radius:12px; --max-width:1140px; --transition:all .25s cubic-bezier(.16,1,.3,1);
+  --ink: #17202d;
+  --muted: #536174;
+  --paper: #fbfaf7;
+  --white: #ffffff;
+  --blue: #2457d6;
+  --blue-dark: #163ea8;
+  --blue-pale: #eaf0ff;
+  --coral: #ff765e;
+  --lime: #d7f36a;
+  --line: #dce2eb;
+  --radius: 18px;
+  --max: 1160px;
+  --shadow: 0 20px 55px rgba(23, 32, 45, .09);
 }
-html { scroll-behavior:smooth; font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif; color:var(--text-main); background:var(--bg-color); line-height:1.6; -webkit-font-smoothing:antialiased; }
-body { min-width:320px; }
-a { color:inherit; }
-.container { width:100%; max-width:var(--max-width); margin:0 auto; padding:0 1.5rem; }
-.section { padding:6rem 0; scroll-margin-top:90px; }
-.bg-light { background:var(--bg-light); border-top:1px solid var(--border-color); border-bottom:1px solid var(--border-color); }
-.text-center { text-align:center; }
-.section-number { display:inline-block; font-size:.8rem; font-weight:700; color:var(--primary); text-transform:uppercase; letter-spacing:.12em; margin-bottom:.75rem; }
-.btn { display:inline-flex; align-items:center; justify-content:center; gap:.45rem; font-weight:600; padding:.75rem 1.5rem; border-radius:var(--radius); text-decoration:none; transition:var(--transition); cursor:pointer; font-size:.95rem; border:1px solid transparent; }
-.btn-primary { background:var(--text-main); color:#fff; }
-.btn-primary:hover { background:var(--primary); transform:translateY(-2px); box-shadow:0 12px 24px -6px rgba(2,132,199,.25); }
-.btn-outline { border-color:var(--border-color); color:var(--text-main); background:transparent; }
-.btn-outline:hover { border-color:var(--text-main); background:var(--text-main); color:#fff; }
-.btn-large { padding:1rem 2.2rem; font-size:1.05rem; }
-.badge { display:inline-block; padding:.35rem .85rem; background:#e0f2fe; color:var(--primary-dark); font-size:.85rem; font-weight:600; border-radius:50px; margin-bottom:1.5rem; }
-.site-header { padding:1rem 0; border-bottom:1px solid var(--border-color); position:sticky; top:0; background:rgba(255,255,255,.94); backdrop-filter:blur(12px); z-index:100; }
-.nav-container { display:flex; justify-content:space-between; align-items:center; gap:1.25rem; }
-.logo { font-weight:800; font-size:1.15rem; letter-spacing:-.025em; color:var(--text-main); text-decoration:none; white-space:nowrap; }
-.nav-links { display:flex; align-items:center; gap:2rem; }
-.nav-links a { text-decoration:none; color:var(--text-muted); font-size:.95rem; font-weight:500; transition:var(--transition); }
-.nav-links a:hover { color:var(--primary); }
-.menu-toggle { display:none; border:1px solid var(--border-color); background:#fff; border-radius:8px; padding:9px; cursor:pointer; }
-.menu-toggle span { display:block; width:21px; height:2px; background:var(--text-main); margin:4px 0; }
-.hero { padding:5.5rem 0 7rem; }
-.hero-grid { display:grid; grid-template-columns:1.2fr .8fr; gap:4rem; align-items:center; }
-.hero h1 { font-size:clamp(2.5rem,4.5vw,3.5rem); line-height:1.12; letter-spacing:-.035em; margin-bottom:1.5rem; }
-.highlight { color:var(--primary); }
-.hero-subtitle { font-size:1.2rem; color:var(--text-muted); margin-bottom:2.25rem; line-height:1.6; }
-.hero-cta { display:flex; flex-direction:column; gap:.75rem; align-items:flex-start; }
-.cta-note { font-size:.85rem; color:var(--text-muted); max-width:480px; }
-.hero-img,.about-img { width:100%; height:auto; border-radius:var(--radius); object-fit:cover; box-shadow:0 25px 50px -12px rgba(15,23,42,.1); }
-.section-header { max-width:720px; margin-bottom:3.5rem; }
-.section-header h2 { font-size:clamp(2rem,3vw,2.75rem); letter-spacing:-.025em; margin-bottom:.85rem; line-height:1.15; }
-.section-lead { font-size:1.15rem; color:var(--text-muted); }
-.pain-points-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem; }
-.card { background:var(--card-bg); border:1px solid var(--border-color); padding:2.25rem; border-radius:var(--radius); transition:var(--transition); }
-.card:hover { border-color:#cbd5e1; transform:translateY(-3px); }
-.card-icon { font-size:1.75rem; margin-bottom:1rem; }
-.card h3 { font-size:1.15rem; margin-bottom:.5rem; letter-spacing:-.01em; }
-.card p { color:var(--text-muted); font-size:.95rem; }
-.card-highlight { background:var(--text-main); color:#fff; border:none; grid-column:1/-1; padding:3rem; }
-.card-highlight h3 { color:#fff; font-size:1.4rem; margin-bottom:1rem; }
-.card-highlight p { color:#cbd5e1; font-size:1.05rem; max-width:800px; }
-.services-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; }
-.service-card { background:var(--card-bg); border:1px solid var(--border-color); padding:2.75rem 2.25rem; border-radius:var(--radius); transition:var(--transition); }
-.service-card:hover { transform:translateY(-5px); border-color:var(--primary); box-shadow:0 20px 40px -15px rgba(2,132,199,.08); }
-.service-step { font-size:.75rem; font-weight:700; text-transform:uppercase; color:var(--primary); letter-spacing:.1em; margin-bottom:.75rem; }
-.service-card h3 { font-size:1.3rem; margin-bottom:.5rem; letter-spacing:-.01em; }
-.service-sub { font-size:.875rem; color:var(--text-muted); font-weight:600; margin-bottom:1.25rem; }
-.service-card p { color:var(--text-muted); font-size:.95rem; }
-.cases-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:2rem; }
-.case-card { background:var(--card-bg); border:1px solid var(--border-color); padding:2.75rem; border-radius:var(--radius); transition:var(--transition); }
-.case-card:hover { transform:translateY(-3px); }
-.case-badge { font-size:.75rem; font-weight:700; color:var(--primary-dark); background:#f0f9ff; padding:.3rem .75rem; border-radius:6px; display:inline-block; margin-bottom:1.25rem; letter-spacing:.02em; }
-.case-stats { font-size:clamp(1.6rem,3vw,2rem); font-weight:800; color:var(--text-main); margin-bottom:.75rem; letter-spacing:-.03em; }
-.case-card h3 { font-size:1.25rem; margin-bottom:.75rem; letter-spacing:-.01em; line-height:1.25; }
-.case-card p { color:var(--text-muted); font-size:.95rem; }
-.about-grid { display:grid; grid-template-columns:1.2fr .8fr; gap:4rem; align-items:center; }
-.about-text h2 { font-size:2.5rem; line-height:1.2; margin-bottom:1.25rem; }
-.about-lead { font-size:1.25rem; font-weight:600; margin-bottom:1.5rem; color:var(--text-main); }
-.about-text p { color:var(--text-muted); margin-bottom:1.15rem; }
-.tags { margin-top:2.25rem; display:flex; gap:.75rem; flex-wrap:wrap; }
-.tag { background:var(--bg-light); border:1px solid var(--border-color); padding:.5rem 1rem; border-radius:6px; font-size:.8rem; font-weight:700; letter-spacing:.06em; color:var(--text-main); }
-.cta-section { background-color:var(--bg-light); }
-.cta-section h2 { font-size:clamp(2rem,4vw,2.75rem); margin-bottom:.75rem; line-height:1.2; }
-.cta-lead { font-size:1.3rem; font-weight:600; margin-bottom:.75rem; }
-.cta-desc { color:var(--text-muted); max-width:640px; margin:0 auto 3rem; font-size:1.05rem; }
-.cta-disclaimer { margin-top:1.25rem; font-size:.875rem; color:var(--text-muted); }
-.cta-disclaimer a { color:var(--primary-dark); text-underline-offset:3px; }
-.site-footer { padding:3rem 0; border-top:1px solid var(--border-color); font-size:.875rem; color:var(--text-muted); }
-.footer-flex { display:flex; justify-content:space-between; align-items:center; gap:1rem; }
-@media(max-width:900px) {
- .nav-links { gap:1rem; }
- .nav-links a { font-size:.85rem; }
- .nav-container>.btn { padding:.65rem .9rem; font-size:.85rem; }
- .hero-grid,.about-grid { gap:2.5rem; }
- .service-card,.case-card { padding:2rem; }
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body { margin: 0; min-width: 320px; color: var(--ink); background: var(--paper); font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+a { color: inherit; }
+.container { width: min(var(--max), calc(100% - 48px)); margin-inline: auto; }
+.skip-link { position: absolute; top: -100px; left: 1rem; z-index: 999; background: var(--white); padding: .75rem 1rem; }
+.skip-link:focus { top: 1rem; }
+.site-header { position: sticky; top: 0; z-index: 100; background: rgba(251,250,247,.93); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(220,226,235,.85); }
+.nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+.brand { text-decoration: none; font-size: 1.05rem; font-weight: 800; letter-spacing: -.04em; white-space: nowrap; }
+.brand-mark { display: inline-grid; place-items: center; width: 31px; height: 31px; margin-right: .45rem; background: var(--blue); color: white; border-radius: 9px; font-size: .78rem; vertical-align: middle; }
+.nav-links { display: flex; align-items: center; gap: 1.6rem; }
+.nav-links a { text-decoration: none; color: var(--muted); font-size: .9rem; font-weight: 650; }
+.nav-links a:hover { color: var(--blue); }
+.menu-toggle { display: none; background: transparent; border: 1px solid var(--line); border-radius: 10px; padding: .55rem .65rem; cursor: pointer; }
+.menu-toggle span { display: block; width: 21px; height: 2px; margin: 4px 0; background: var(--ink); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 48px; padding: .78rem 1.2rem; border: 1px solid transparent; border-radius: 999px; text-decoration: none; font-weight: 750; font-size: .94rem; transition: transform .2s ease, background .2s ease, border-color .2s ease; }
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: var(--blue); color: white; }
+.btn-primary:hover { background: var(--blue-dark); }
+.btn-dark { background: var(--ink); color: white; }
+.btn-dark:hover { background: #303d50; }
+.btn-outline { border-color: var(--line); background: rgba(255,255,255,.5); }
+.btn-outline:hover { border-color: var(--blue); color: var(--blue); }
+.hero { padding: clamp(4rem, 8vw, 7.2rem) 0 5rem; overflow: hidden; }
+.hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(2.5rem, 6vw, 5.5rem); align-items: center; }
+.eyebrow { display: inline-flex; align-items: center; gap: .55rem; margin-bottom: 1.35rem; color: var(--blue); font-size: .76rem; font-weight: 850; text-transform: uppercase; letter-spacing: .13em; }
+.eyebrow::before { content: ""; display: inline-block; width: 23px; height: 3px; border-radius: 3px; background: var(--coral); }
+h1, h2, h3, p { margin-top: 0; }
+h1 { max-width: 760px; margin-bottom: 1.4rem; font-size: clamp(3rem, 6.3vw, 5.7rem); line-height: .99; letter-spacing: -.075em; font-weight: 850; }
+h1 .accent { color: var(--blue); }
+.hero-copy { max-width: 660px; margin-bottom: 1.8rem; color: var(--muted); font-size: clamp(1.08rem, 1.5vw, 1.28rem); line-height: 1.65; }
+.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: .8rem; }
+.hero-note { margin: 1rem 0 0; color: var(--muted); font-size: .83rem; }
+.hero-visual { position: relative; }
+.hero-photo-frame { position: relative; max-width: 470px; margin-left: auto; padding: 12px; border-radius: 28px; background: var(--blue-pale); transform: rotate(2deg); }
+.hero-photo-frame::before { content: ""; position: absolute; z-index: -1; width: 118px; height: 118px; right: -25px; top: -25px; background: var(--lime); border-radius: 50%; }
+.hero-photo { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center; border-radius: 19px; }
+.photo-caption { position: absolute; bottom: 25px; left: -24px; max-width: 220px; padding: .9rem 1.05rem; border-radius: 14px; background: var(--white); box-shadow: var(--shadow); font-size: .85rem; font-weight: 750; transform: rotate(-3deg); }
+.photo-caption span { display: block; color: var(--blue); font-size: .7rem; text-transform: uppercase; letter-spacing: .1em; margin-bottom: .2rem; }
+.proof-strip { padding: 1.15rem 0; background: var(--ink); color: white; }
+.proof-inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+.proof-label { color: #c6d0df; font-size: .82rem; font-weight: 700; }
+.proof-items { display: flex; flex-wrap: wrap; gap: .65rem; }
+.proof-items span { padding: .4rem .75rem; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; color: #f4f6fa; font-size: .78rem; font-weight: 650; }
+.section { padding: clamp(4rem, 7vw, 6.5rem) 0; }
+.section-white { background: var(--white); }
+.section-blue { background: var(--blue-pale); }
+.section-heading { max-width: 760px; margin-bottom: 2.8rem; }
+.section-kicker { margin-bottom: .75rem; color: var(--blue); font-size: .75rem; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
+h2 { margin-bottom: 1rem; font-size: clamp(2.2rem, 4.5vw, 3.6rem); line-height: 1.05; letter-spacing: -.06em; font-weight: 850; }
+.section-intro { max-width: 690px; margin-bottom: 0; color: var(--muted); font-size: 1.08rem; }
+.offer-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 1.25rem; align-items: stretch; }
+.offer-card { display: flex; flex-direction: column; padding: clamp(1.6rem, 3vw, 2.5rem); border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
+.offer-card-primary { background: var(--ink); color: white; border-color: var(--ink); }
+.offer-topline { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; }
+.offer-number { display: inline-grid; place-items: center; width: 42px; height: 42px; border-radius: 13px; background: var(--blue-pale); color: var(--blue); font-weight: 850; }
+.offer-card-primary .offer-number { background: var(--lime); color: var(--ink); }
+.offer-label { color: var(--muted); font-size: .72rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+.offer-card-primary .offer-label { color: #c6d0df; }
+.offer-card h3 { margin-bottom: .9rem; font-size: clamp(1.6rem, 2.8vw, 2.25rem); line-height: 1.1; letter-spacing: -.045em; }
+.offer-card p { color: var(--muted); }
+.offer-card-primary p { color: #d4dbe5; }
+.offer-list { list-style: none; display: grid; gap: .65rem; margin: .6rem 0 2rem; padding: 0; }
+.offer-list li { position: relative; padding-left: 1.5rem; font-size: .94rem; }
+.offer-list li::before { content: "↗"; position: absolute; left: 0; color: var(--blue); font-weight: 850; }
+.offer-card-primary .offer-list li::before { color: var(--lime); }
+.offer-card .btn { align-self: flex-start; margin-top: auto; }
+.offer-card-primary .btn { background: var(--lime); color: var(--ink); }
+.offer-card-primary .btn:hover { background: #e4ff93; }
+.workshop-note { margin-top: 1.2rem; padding: 1rem 1.1rem; border-left: 3px solid var(--coral); background: #fff5f1; color: var(--ink); font-size: .9rem; }
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
+.step { padding: 1.35rem; border-top: 3px solid var(--blue); background: var(--white); border-radius: 0 0 14px 14px; }
+.step-num { display: block; margin-bottom: 1.4rem; color: var(--blue); font-size: .78rem; font-weight: 850; letter-spacing: .1em; }
+.step h3 { margin-bottom: .5rem; font-size: 1.08rem; letter-spacing: -.02em; }
+.step p { margin-bottom: 0; color: var(--muted); font-size: .9rem; }
+.results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.result { padding: 1.6rem; border: 1px solid var(--line); border-radius: 16px; background: var(--white); }
+.result-type { margin-bottom: 1rem; color: var(--blue); font-size: .72rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+.result-metric { margin-bottom: .7rem; font-size: clamp(1.8rem, 3vw, 2.6rem); line-height: 1; letter-spacing: -.06em; font-weight: 850; }
+.result h3 { margin-bottom: .55rem; font-size: 1.08rem; }
+.result p { margin-bottom: 0; color: var(--muted); font-size: .9rem; }
+.results-note { margin-top: 1rem; color: var(--muted); font-size: .8rem; }
+.about-grid { display: grid; grid-template-columns: .75fr 1.25fr; align-items: center; gap: clamp(2rem, 6vw, 5rem); }
+.about-photo { width: 100%; max-width: 390px; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 22px; }
+.about-copy p { color: var(--muted); }
+.about-lead { color: var(--ink) !important; font-size: 1.25rem; font-weight: 750; }
+.traits { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1.5rem; }
+.traits span { padding: .48rem .75rem; border-radius: 7px; background: var(--blue-pale); color: var(--blue-dark); font-size: .73rem; font-weight: 850; letter-spacing: .07em; }
+.contact { background: var(--blue); color: white; }
+.contact .section-kicker { color: var(--lime); }
+.contact h2 { max-width: 790px; }
+.contact p { max-width: 650px; color: #e3eaff; font-size: 1.08rem; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.6rem; }
+.contact .btn-primary { background: var(--lime); color: var(--ink); }
+.contact .btn-outline { color: white; border-color: rgba(255,255,255,.4); background: transparent; }
+.contact .btn-outline:hover { border-color: white; background: rgba(255,255,255,.1); }
+.contact-detail { margin-top: 1.2rem; font-size: .88rem !important; }
+.contact-detail a { text-underline-offset: 3px; }
+.site-footer { padding: 1.5rem 0; background: var(--ink); color: #c6d0df; font-size: .82rem; }
+.footer-inner { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.site-footer p { margin: 0; }
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr .75fr; gap: 2rem; }
+  .nav-links { gap: 1rem; }
+  .nav-links a { font-size: .83rem; }
+  .offer-grid { grid-template-columns: 1fr 1fr; }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .results-grid { grid-template-columns: 1fr; }
 }
-@media(max-width:768px) {
- .nav-container { flex-wrap:wrap; }
- .menu-toggle { display:block; margin-left:auto; }
- .nav-container>.btn { display:none; }
- .nav-links { display:none; order:3; width:100%; flex-direction:column; align-items:stretch; gap:0; padding:.5rem 0 .25rem; }
- .nav-links.open { display:flex; }
- .nav-links a { padding:.85rem .25rem; border-top:1px solid var(--border-color); font-size:.95rem; }
- .hero-grid,.about-grid { grid-template-columns:1fr; gap:3rem; }
- .hero { padding:3.5rem 0; }
- .hero-image-wrapper { max-width:520px; }
- .card-highlight { grid-column:span 1; padding:2rem; }
- .section { padding:4rem 0; }
- .section-header { margin-bottom:2.25rem; }
- .section-lead { font-size:1.05rem; }
- .about-text h2 { font-size:2.15rem; }
- .footer-flex { flex-direction:column; gap:.75rem; text-align:center; }
+@media (max-width: 700px) {
+  .container { width: min(var(--max), calc(100% - 36px)); }
+  .nav { min-height: 68px; flex-wrap: wrap; }
+  .menu-toggle { display: block; margin-left: auto; }
+  .nav > .nav-cta { display: none; }
+  .nav-links { display: none; order: 5; width: 100%; flex-direction: column; align-items: stretch; gap: 0; padding: .25rem 0 .8rem; }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: .8rem .2rem; border-top: 1px solid var(--line); font-size: .95rem; }
+  .hero { padding: 3.7rem 0 3.2rem; }
+  .hero-grid { grid-template-columns: 1fr; gap: 2.8rem; }
+  h1 { font-size: clamp(3rem, 13vw, 4.7rem); }
+  .hero-visual { max-width: 450px; margin: 0 auto; width: 88%; }
+  .photo-caption { left: -15px; bottom: 20px; }
+  .proof-inner { align-items: flex-start; flex-direction: column; gap: .7rem; }
+  .offer-grid, .about-grid { grid-template-columns: 1fr; }
+  .offer-card-primary { order: 0; }
+  .about-photo { max-width: 330px; }
+  .section { padding: 4rem 0; }
+  .section-heading { margin-bottom: 2rem; }
 }
-@media(max-width:480px) {
- .container { padding:0 1.1rem; }
- .hero h1 { font-size:clamp(2.25rem,10vw,3rem); }
- .hero-subtitle { font-size:1.05rem; }
- .btn-large { padding:.9rem 1.1rem; font-size:.95rem; }
- .card,.service-card,.case-card { padding:1.5rem; }
- .case-stats { overflow-wrap:anywhere; }
+@media (max-width: 430px) {
+  .hero-actions, .contact-actions { align-items: stretch; flex-direction: column; }
+  .hero-actions .btn, .contact-actions .btn { width: 100%; }
+  .steps { grid-template-columns: 1fr; }
+  .offer-topline { margin-bottom: 1.4rem; }
+  .photo-caption { max-width: 185px; font-size: .78rem; }
 }
-@media(prefers-reduced-motion:reduce) {
- html { scroll-behavior:auto; }
- *,*::before,*::after { transition:none!important; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
 }
-
-    </style>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <a class="skip-link" href="#indhold">Gå til indhold</a>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Chris Roliggaard – forsiden"><span class="brand-mark">CR</span>Chris Roliggaard</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Åbn menu"><span></span><span></span></button>
+      <nav class="nav-links" id="site-nav" aria-label="Hovednavigation">
+        <a href="#ydelser">Det kan jeg hjælpe med</a>
+        <a href="#arbejdsform">Arbejdsform</a>
+        <a href="#resultater">Resultater</a>
+        <a href="#om-chris">Om Chris</a>
+      </nav>
+      <a class="btn btn-outline nav-cta" href="#kontakt">Lad os tale sammen <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
 
-    <!-- Header / Navigation -->
-    <header class="site-header">
-        <div class="container nav-container">
-            <a href="#" class="logo">Chris Roliggaard</a>
-            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Åbn menu"><span></span><span></span></button>
-            <nav class="nav-links" id="site-nav" aria-label="Hovednavigation">
-                <a href="#problemet">Udfordringen</a>
-                <a href="#tilgang">Tilgang</a>
-                <a href="#resultater">Resultater</a>
-                <a href="#om-mig">Om Chris</a>
-            </nav>
-            <a href="#kontakt" class="btn btn-outline">Tag en dialog →</a>
+  <main id="indhold">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Forretningsudvikling · Workshops</div>
+          <h1>Jeg finder potentialet.<br><span class="accent">Får det til at ske.</span></h1>
+          <p class="hero-copy">Jeg hjælper virksomheder med at omsætte strategi og gode idéer til løsninger, der virker for forretningen, kunderne og de mennesker, der skal føre dem ud i livet.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#ydelser">Se, hvordan jeg kan hjælpe <span aria-hidden="true">↘</span></a>
+            <a class="btn btn-outline" href="#kontakt">Tag en uforpligtende snak</a>
+          </div>
+          <p class="hero-note">Fra udfordring og idé til konkret handling.</p>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container hero-grid">
-            <div class="hero-content">
-                <div class="badge">Strategisk sparring, udvikling & eksekvering</div>
-                <h1>Jeg finder mulighederne.<br>Samler menneskerne.<br><span class="highlight">Får tingene til at ske.</span></h1>
-                <p class="hero-subtitle">Jeg hjælper virksomheder og organisationer med at forstå komplekse udfordringer, finde nye veje og omsætte idéer til forbedringer, der virker i praksis.</p>
-                <div class="hero-cta">
-                    <a href="#kontakt" class="btn btn-primary btn-large">Tal med mig om en udfordring →</a>
-                    <span class="cta-note">Ingen salgstale eller forpligtelser. Vi finder ud af, om jeg er den rette til at hjælpe.</span>
-                </div>
-            </div>
-            <div class="hero-image-wrapper">
-                <img src="chris-hero.jpg" alt="Chris Roliggaard" class="hero-img" />
-            </div>
+        <div class="hero-visual">
+          <div class="hero-photo-frame">
+            <img class="hero-photo" src="chris-hero.jpg" alt="Chris Roliggaard" fetchpriority="high">
+          </div>
+          <div class="photo-caption"><span>Min tilgang</span>Kommercielt blik. Kreative løsninger. Handling i praksis.</div>
         </div>
+      </div>
     </section>
 
-    <!-- 01 · Genkend problemet -->
-    <section id="problemet" class="section bg-light">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">01 · Udfordringen</span>
-                <h2>Måske er problemet ikke mangel på idéer</h2>
-                <p class="section-lead">Ofte er det noget helt andet i organisationen, processerne eller samarbejdet, der spænder ben for fremdriften.</p>
-            </div>
-            <div class="pain-points-grid">
-                <div class="card">
-                    <div class="card-icon">⚡</div>
-                    <h3>Uklart udgangspunkt</h3>
-                    <p>I ved, at noget skal ændres – men det er svært at præcisere, hvor knuden reelt sidder.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">🔄</div>
-                    <h3>Tilbagevendende bøvl</h3>
-                    <p>Problemerne bliver ved med at vende tilbage, selvom I har forsøgt at løse dem før.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">💡</div>
-                    <h3>Manglende eksekvering</h3>
-                    <p>I har gode idéer og potentiale, men de kommer ikke rigtigt videre fra skrivebordet.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">👥</div>
-                    <h3>Siloer og modstand</h3>
-                    <p>Forskellige afdelinger og faggrupper har svært ved at tænke og skabe en fælles retning.</p>
-                </div>
-                <div class="card card-highlight">
-                    <h3>Der er brug for at få mennesker til at tænke sammen</h3>
-                    <p>Når forskellige perspektiver samles og struktureres konstruktivt, kommer I fra snak til en konkret vej videre. Det er dér, jeg kommer ind i billedet.</p>
-                </div>
-            </div>
+    <div class="proof-strip" aria-label="Faglige fokusområder">
+      <div class="container proof-inner">
+        <div class="proof-label">Jeg arbejder i krydsfeltet mellem</div>
+        <div class="proof-items"><span>Forretning</span><span>Kundeoplevelser</span><span>Mennesker</span><span>Eksekvering</span></div>
+      </div>
+    </div>
+
+    <section class="section section-white" id="ydelser">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">To måder at samarbejde på</div>
+          <h2>Fra forretningspotentiale til fremdrift.</h2>
+          <p class="section-intro">Jeg hjælper med at finde det, der spænder ben, og udvikle løsninger, som kan fungere i virkeligheden. Det kan være tæt sparring om forretningen eller en workshop, der samler mennesker om en konkret udfordring.</p>
         </div>
+        <div class="offer-grid">
+          <article class="offer-card offer-card-primary">
+            <div class="offer-topline"><span class="offer-number">01</span><span class="offer-label">Primært fokus</span></div>
+            <h3>Forretningsudvikling og strategisk sparring</h3>
+            <p>Jeg hjælper jer med at se nye muligheder, finde flaskehalse og forbinde strategi med den daglige virkelighed. Med blik for både forretning, kunder og organisation omsætter vi udfordringer til tydelige næste skridt.</p>
+            <ul class="offer-list">
+              <li>Forretningsudvikling og kommercielle muligheder</li>
+              <li>Kundeoplevelser, kunderejser og processer</li>
+              <li>Analyse, problemløsning og implementering</li>
+              <li>Tværgående samarbejde og organisatorisk fremdrift</li>
+            </ul>
+            <a class="btn" href="#kontakt">Tal om jeres udfordring <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="offer-card">
+            <div class="offer-topline"><span class="offer-number">02</span><span class="offer-label">Workshops og facilitering</span></div>
+            <h3>Workshops, der skaber nye perspektiver</h3>
+            <p>Jeg designer og faciliterer forløb, hvor mennesker deler viden, udfordrer vanetænkning og finder konkrete veje videre sammen.</p>
+            <ul class="offer-list">
+              <li>Facilitering af udviklings- og arbejdsmøder</li>
+              <li>Idéudvikling og fælles problemløsning</li>
+              <li>CV-Rystetur – et konkret, afprøvet koncept</li>
+            </ul>
+            <a class="btn btn-dark" href="#cv-rystetur">Se CV-Rystetur <span aria-hidden="true">↘</span></a>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- 02 · Vis, hvordan du hjælper -->
-    <section id="tilgang" class="section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">02 · Arbejdsform</span>
-                <h2>Sådan hjælper jeg jer videre</h2>
-                <p class="section-lead">Ingen tunge standardkasser eller teoretiske slide-decks. Jeg undersøger, udfordrer og udvikler sammen med de mennesker, der skal få løsningen til at leve.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-step">Fase 01</div>
-                    <h3>🔍 Find det reelle problem</h3>
-                    <p class="service-sub">Når årsagen ikke er så enkel, som den ser ud.</p>
-                    <p>Jeg går bag om symptomerne, samler data, observerer arbejdsgange og lytter til organisationen, så I bruger kræfterne på at løse det rigtige problem.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-step">Fase 02</div>
-                    <h3>💡 Udvikl & kvalificer mulighederne</h3>
-                    <p class="service-sub">Når I har idéen, men mangler retning.</p>
-                    <p>Jeg hjælper med at udfordre og kvalificere potentialet og omsætte det til et skarpt, overskueligt koncept, I rent faktisk kan handle på.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-step">Fase 03</div>
-                    <h3>🚀 Omsæt til konkret handling</h3>
-                    <p class="service-sub">Når beslutningen er taget, og det skal virke.</p>
-                    <p>Jeg designer og faciliterer processer, skaber struktur og involverer de rigtige mennesker, så forandringen forankres bæredygtigt i driften.</p>
-                </div>
-            </div>
+    <section class="section section-blue" id="arbejdsform">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Min arbejdsform</div>
+          <h2>Fra knude til næste skridt.</h2>
+          <p class="section-intro">Jeg kommer ikke med en standardløsning, før vi forstår problemet. Jeg arbejder tæt sammen med de mennesker, der kender hverdagen – og som skal få løsningen til at fungere.</p>
         </div>
+        <div class="steps">
+          <article class="step"><span class="step-num">01 / FORSTÅ</span><h3>Find det reelle problem</h3><p>Vi undersøger data, arbejdsgange og perspektiver, før vi beslutter, hvad der skal løses.</p></article>
+          <article class="step"><span class="step-num">02 / UDFORDR</span><h3>Se nye muligheder</h3><p>Vi udfordrer antagelser og kvalificerer idéerne med blik for værdi og gennemførlighed.</p></article>
+          <article class="step"><span class="step-num">03 / INVOLVÉR</span><h3>Få mennesker med</h3><p>Vi samler de relevante perspektiver og skaber fælles retning om løsningen.</p></article>
+          <article class="step"><span class="step-num">04 / GØR</span><h3>Omsæt til handling</h3><p>Vi konkretiserer næste skridt og får løsningen ud af præsentationen og ind i praksis.</p></article>
+        </div>
+      </div>
     </section>
 
-    <!-- 03 · Dokumenterede resultater -->
-    <section id="resultater" class="section bg-light">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">03 · Dokumentation</span>
-                <h2>Det er ikke kun ord</h2>
-                <p class="section-lead">Konkrete eksempler på forandringer og resultater skabt gennem fokuseret indsats:</p>
-            </div>
-            <div class="cases-grid">
-                <div class="case-card">
-                    <div class="case-badge">Driftsoptimering</div>
-                    <div class="case-stats">20 % → under 1 %</div>
-                    <h3>Ubesvarede opkald i kundeservice</h3>
-                    <p>Gennem dybdegående analyse af data, systemer, arbejdsgange og medarbejdernes rammer blev andelen af tabte opkald reduceret markant, og kundeoplevelsen blev løftet.</p>
-                </div>
-                <div class="case-card">
-                    <div class="case-badge">Kultur & Fastholdelse</div>
-                    <div class="case-stats">3 mdr. → næsten 2 år</div>
-                    <h3>Medarbejderfastholdelse & trivsel</h3>
-                    <p>Gennem ændringer i rammer, opgaver, fællesskab og udviklingsmuligheder blev fastholdelsen af medarbejdere flerdoblet over tid.</p>
-                </div>
-                <div class="case-card">
-                    <div class="case-badge">Koncept & Partnerskaber</div>
-                    <div class="case-stats">6 → 60 deltagere</div>
-                    <h3>CV-Rystetur (Gratis netværksinitiativ)</h3>
-                    <p>Voksede fra seks personer omkring et bord til 60 deltagere gennem stærk konceptudvikling, facilitering og kommunikation for at skabe jobmuligheder.</p>
-                </div>
-            </div>
+    <section class="section section-white" id="cv-rystetur">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Workshopkoncept</div>
+          <h2>CV-Rystetur: Når mennesker hjælper mennesker videre.</h2>
+          <p class="section-intro">CV-Rystetur samler jobsøgende om konstruktiv sparring i små grupper. Deltagerne får nye øjne på deres CV, deler erfaringer og skaber relationer, der kan åbne nye muligheder.</p>
         </div>
+        <div class="offer-grid">
+          <article class="offer-card offer-card-primary">
+            <div class="offer-topline"><span class="offer-number">↗</span><span class="offer-label">Et konkret koncept</span></div>
+            <h3>En enkel ramme. Mange nye perspektiver.</h3>
+            <p>Konceptet er vokset fra de første seks deltagere til arrangementer med 60 jobsøgende. Det bygger på en enkel idé: Man kan ofte se muligheder i andres CV'er, som man overser i sit eget.</p>
+            <ul class="offer-list">
+              <li>Struktureret CV-sparring i små grupper</li>
+              <li>Fællesskab og netværk på tværs</li>
+              <li>Et format, der kan tilpasses lokale behov</li>
+            </ul>
+            <a class="btn" href="mailto:roliggaard@gmail.com?subject=Samarbejde%20om%20CV-Rystetur">Tal med mig om CV-Rystetur <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="offer-card">
+            <div class="offer-topline"><span class="offer-number">+</span><span class="offer-label">Vigtigt princip</span></div>
+            <h3>Gratis for deltagerne.</h3>
+            <p>CV-Rystetur er skabt for at give jobsøgende adgang til sparring og netværk uden betaling. Samarbejdet kan være relevant for aktører, der ønsker at skabe værdi for mennesker i jobsøgning.</p>
+            <div class="workshop-note">Vil I være med til at skabe muligheder for jobsøgende? Lad os tale om format, målgruppe og samarbejde.</div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- 04 · Mød Chris -->
-    <section id="om-mig" class="section about-section">
-        <div class="container about-grid">
-            <div class="about-text">
-                <span class="section-number">04 · Profilen</span>
-                <h2>Hvem er Chris?</h2>
-                <p class="about-lead">Jeg kan godt lide det, der endnu ikke er helt færdigt.</p>
-                <p>Med over 15 års erfaring inden for forretningsudvikling, organisation, salg, analyse og kommercialisering brænder jeg for at skabe struktur i komplekse miljøer.</p>
-                <p>Jeg kommer ikke med et færdigt standardsvar på alt. Men jeg er vant til at træde ind i situationer, hvor løsningen ikke ligger klar på forhånd – og sammen med organisationen finde ud af, hvad der skal til for at komme videre.</p>
-                <p>Jeg trives bedst i krydsfeltet mellem <strong>Mennesker, Forretning, Data og Eksekvering</strong>.</p>
-                <div class="tags">
-                    <span class="tag">PROBLEMLØSER</span>
-                    <span class="tag">IDÉMAGER</span>
-                    <span class="tag">RELATIONSSKABER</span>
-                </div>
-            </div>
-            <div class="about-image-wrapper">
-                <img src="chris-about.jpg" alt="Chris Roliggaard" class="about-img" />
-            </div>
+    <section class="section section-blue" id="resultater">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">Udvalgte resultater</div>
+          <h2>Udvikling skal kunne mærkes.</h2>
+          <p class="section-intro">Eksempler fra mit arbejde med drift, mennesker og koncepter.</p>
         </div>
+        <div class="results-grid">
+          <article class="result"><div class="result-type">Kundeoplevelse og drift</div><div class="result-metric">20 % → under 1 %</div><h3>Færre ubesvarede opkald</h3><p>Analyse af data, systemer og arbejdsgange bidrog til at reducere andelen af ubesvarede opkald markant.</p></article>
+          <article class="result"><div class="result-type">Mennesker og organisation</div><div class="result-metric">3 mdr. → næsten 2 år</div><h3>Styrket medarbejderfastholdelse</h3><p>Ændringer i rammer, opgaver, fællesskab og udviklingsmuligheder var med til at øge fastholdelsen over tid.</p></article>
+          <article class="result"><div class="result-type">Koncept og facilitering</div><div class="result-metric">6 → 60</div><h3>CV-Rystetur</h3><p>Et frivilligt initiativ voksede fra seks deltagere til arrangementer med 60 jobsøgende gennem konceptudvikling, kommunikation og facilitering.</p></article>
+        </div>
+        <p class="results-note">Resultaterne er eksempler fra forskellige sammenhænge og skal ses i deres konkrete kontekst.</p>
+      </div>
     </section>
 
-    <!-- 05 · Gør næste skridt enkelt -->
-    <section id="kontakt" class="section cta-section">
-        <div class="container text-center">
-            <span class="section-number">05 · Næste skridt</span>
-            <h2>Har I noget, der skal flytte sig?</h2>
-            <p class="cta-lead">30 minutter. Ingen salgstale. Ingen forpligtelser.</p>
-            <p class="cta-desc">Fortæl mig, hvad I tumler med, hvad I ønsker at skabe, eller hvor I sidder fast. Så finder vi ud af, om jeg kan hjælpe – eller peger jer videre i den rigtige retning.</p>
-            
-            <div class="cta-box">
-                <a href="mailto:roliggaard@gmail.com?subject=En%20udfordring%20vi%20skal%20se%20p%C3%A5" class="btn btn-primary btn-large">Start en dialog på e-mail →</a>
-                <p class="cta-disclaimer">Skriv til <a href="mailto:roliggaard@gmail.com">roliggaard@gmail.com</a> eller find mig på <a href="https://www.linkedin.com/in/chrisroliggaard/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
-            </div>
+    <section class="section section-white" id="om-chris">
+      <div class="container about-grid">
+        <div><img class="about-photo" src="chris-about.jpg" alt="Chris Roliggaard i portræt" loading="lazy"></div>
+        <div class="about-copy">
+          <div class="section-kicker">Om Chris</div>
+          <h2>Kommerciel tænkning. Kreativ problemløsning. Praktisk fremdrift.</h2>
+          <p class="about-lead">Jeg trives dér, hvor potentialet er tydeligt, men vejen frem endnu ikke er det.</p>
+          <p>Jeg har erfaring fra NGO'er, scale-ups og etablerede virksomheder med forretningsudvikling, strategi, drift, analyse og kundeoplevelser. Jeg er optaget af at forstå, hvorfor noget ikke fungerer, og hvad der skal til for at gøre det bedre.</p>
+          <p>Min tilgang er både analytisk og idérig, men altid praktisk: En løsning skal give mening for forretningen, opleves som relevant af kunderne og kunne fungere for de mennesker, der skal bruge den.</p>
+          <div class="traits"><span>PROBLEMLØSER</span><span>IDÉMAGER</span><span>RELATIONSSKABER</span></div>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container footer-flex">
-            <p>&copy; 2026 Chris Roliggaard. Alle rettigheder forbeholdes.</p>
-            <p>Skødstrup, Danmark</p>
+    <section class="section contact" id="kontakt">
+      <div class="container">
+        <div class="section-kicker">Næste skridt</div>
+        <h2>Hvad skal I have til at lykkes?</h2>
+        <p>Fortæl mig om jeres udfordring, ambition eller workshopidé. Så tager vi en uforpligtende snak om behovet, og om jeg er den rette til at hjælpe.</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:roliggaard@gmail.com?subject=En%20snak%20om%20forretningsudvikling">Skriv til Chris <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/chrisroliggaard/" target="_blank" rel="noopener noreferrer">Find mig på LinkedIn</a>
         </div>
-    </footer>
+        <p class="contact-detail">E-mail: <a href="mailto:roliggaard@gmail.com">roliggaard@gmail.com</a></p>
+      </div>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="container footer-inner"><p>© 2026 Chris Roliggaard</p><p>Forretningsudvikling · Workshops · Skødstrup, Danmark</p></div>
+  </footer>
+  <script src="script.js?v=5.0"></script>
 </body>
 </html>

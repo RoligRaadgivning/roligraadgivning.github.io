@@ -1,22 +1,25 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log('Chris Roliggaard - site opdateret og klar.');
+(() => {
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector("#site-nav");
+  if (!toggle || !nav) return;
 
-    const menuButton = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav-links');
+  const closeMenu = () => {
+    nav.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Åbn menu");
+  };
 
-    if (menuButton && nav) {
-        menuButton.addEventListener('click', () => {
-            const isOpen = nav.classList.toggle('open');
-            menuButton.setAttribute('aria-expanded', String(isOpen));
-            menuButton.setAttribute('aria-label', isOpen ? 'Luk menu' : 'Åbn menu');
-        });
+  toggle.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(isOpen));
+    toggle.setAttribute("aria-label", isOpen ? "Luk menu" : "Åbn menu");
+  });
 
-        nav.querySelectorAll('a').forEach((link) => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('open');
-                menuButton.setAttribute('aria-expanded', 'false');
-                menuButton.setAttribute('aria-label', 'Åbn menu');
-            });
-        });
-    }
-});
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeMenu();
+  });
+})();

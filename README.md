@@ -1,38 +1,40 @@
-# Chris Roliggaard – hjemmeside v5.5
+# Chris Roliggaard – hjemmeside v6.0
 
-Denne version bygger videre på v5.3 og bevarer den indlejrede Google Kalender-booking. Den tilføjer en fast LinkedIn-/Open Graph-forhåndsvisning med et dedikeret delingsbillede.
+Denne version samler den seneste Google Kalender-booking og det valgte portræt med den nye positionering og en mere fokuseret struktur. Den bevarer den eksisterende blå, mørke og limegrønne visuelle identitet.
 
-## Upload til GitHub Pages
-1. Åbn repository `roligraadgivning.github.io`.
-2. Upload alle syv filer fra denne mappe direkte i repository-roden (ikke i en undermappe).
-3. Erstat `index.html`, `styles.css` og `script.js`, hvis GitHub spørger.
-4. Behold billedfilerne `chris-hero.jpg`, `chris-about.jpg` og den nye `chris-social-share.jpg`.
-5. Vent på GitHub Pages, og åbn `https://roligraadgivning.github.io/` for at kontrollere siden.
+## Filer
+- `index.html` – kortere forside med det centrale budskab, målgrupper, CV-Rystetur som hovedcase og Google Kalender-booking.
+- `sparring.html` – sparring for jobsøgende/sporskiftere (førsteprioritet) og solo-selvstændige/iværksættere (sekundær målgruppe).
+- `eksempler.html` – CV-Rystetur som hovedcase, samt GRØN KBH og Folkekirkens Nødhjælp.
+- `om-chris.html` – personlig tilgang, værdier og “Get shit done”-attitude.
+- `styles.css` og `script.js` – fælles design og mobilnavigation.
+- `chris-hero.png` – det valgte portræt til hero og Om Chris.
+- `chris-social-share.jpg` – delingsbillede til LinkedIn/Open Graph, 1200 × 627 px.
+- `chris-about.jpg` – beholdt som fil fra den forrige version; den nye Om-side bruger det valgte `chris-hero.png`.
 
-## Deling på LinkedIn
-- `og:title`, `og:description`, `og:image` og `og:url` fastlægger delingsvisningen.
-- Delingsbilledet er `chris-social-share.jpg` i 1200 × 627 px.
-- Når ændringerne er live, indsæt `https://roligraadgivning.github.io/` i LinkedIn Post Inspector for at få LinkedIn til at hente de nye metadata: https://www.linkedin.com/post-inspector/
-- Kontrollér, at billede, titel og beskrivelse er korrekte. LinkedIn kan cache tidligere oplysninger; kør derfor URL'en gennem Post Inspector igen efter ændringer.
-- Test også et nyt opslag, gerne som kladde, før du bruger linket i en vigtig kampagne. Ændringer i metadata retter ikke nødvendigvis allerede offentliggjorte opslag.
+## Publicering på GitHub Pages
+1. Pak ZIP-filen ud.
+2. Upload alle filer direkte til roden af repository `roligraadgivning.github.io`.
+3. Erstat de eksisterende filer, herunder `index.html`, `styles.css` og `script.js`.
+4. Sørg for, at alle tre nye undersider (`sparring.html`, `eksempler.html`, `om-chris.html`) også ligger i repository-roden.
+5. Vent på GitHub Pages og test hjemmesiden på computer og mobil.
 
 ## Booking
-- Google Calendar Appointment Scheduling er indlejret i den afsluttende kontaktsektion.
-- Alle bookingknapper fører til `#booking` på siden.
-- Test formularen på både computer og mobil, og kontrollér, at tider kan vælges og bookinger gennemføres.
+- Google Calendar Appointment Scheduling er indlejret på forsiden.
+- Booking-knapper fra undersider fører til `index.html#booking`.
+- Bookingbeskrivelse før samtalen er frivillig; der er ikke tilføjet et ekstra obligatorisk felt på hjemmesiden.
+- Google styrer indholdet inde i kalenderens iframe. På brede skærme beskæres den øverste del visuelt for at prioritere kalenderen; under 900 px vises hele kalenderen for at undgå at skære tider væk.
+- Hvis kalenderen ikke vises korrekt, kan besøgende åbne bookingplanen direkte hos Google via fallback-linket.
 
-## Indhold
-- Primær gren: forretningsudvikling og strategisk sparring.
-- Sekundær gren: workshops og facilitering, med CV-Rystetur som konkret koncept.
-- Kontakt: roliggaard@gmail.com.
-- LinkedIn: https://www.linkedin.com/in/chrisroliggaard/
-- CV-Rystetur beskrives som gratis for deltagerne. Der loves ikke en bestemt pris eller prismodel for samarbejdspartnere.
+## Deling på LinkedIn
+- Forsiden bruger Open Graph-metadata for titel, beskrivelse, URL og `chris-social-share.jpg`.
+- Efter publicering kan URL'en testes i LinkedIn Post Inspector: https://www.linkedin.com/post-inspector/
+- LinkedIn kan cache ældre metadata; kør URL'en gennem værktøjet igen efter ændringer.
 
-
-Version 5.5: The uploaded transparent portrait `chris-hero.png` is used as the homepage hero image. The same portrait is incorporated into `chris-social-share.jpg` (1200 × 627) for LinkedIn/Open Graph previews. Google Calendar inline booking and Open Graph metadata are retained. Upload all files in the ZIP to the repository root.
-
-
-## Fejlfinding af booking
-- Indlejringen er sat til at indlæse straks (ikke lazy loading) og har 800 px højde.
-- Hvis kalenderen stadig er tom, kan besøgende åbne den direkte hos Google via linket under kalenderen.
-- Test den direkte bookingadresse i et separat browservindue. Hvis den også mangler ledige tider, kontrollér aftaleplanens tilgængelighed og planlægningsvindue i Google Kalender. Hvis den virker direkte, men ikke i iframe, prøv en anden browser uden indholdsblokkering og kontrollér derefter indlejringen.
+## Indholdsmæssige principper
+- Primær målgruppe: jobsøgende og sporskiftere.
+- Sekundær målgruppe: solo-selvstændige og iværksættere.
+- CV-Rystetur er et selvstændigt koncept og skal være gratis for deltagerne.
+- Første samtale er gratis og afklarende; der loves ikke en færdig løsning på 30 minutter.
+- Ingen priser eller endnu ikke definerede produktpakker er opfundet.
+- Chris positioneres som personlig sparringspartner, ikke tekstforfatter, SEO-specialist eller traditionelt marketingbureau.

@@ -18,3 +18,9 @@ Filerne i denne mappe er klar til GitHub Pages.
 
 ## Bemærk
 CV-Rystetur beskrives som gratis for deltagerne. Der loves ikke en bestemt pris eller prismodel for samarbejdspartnere.
+
+
+## Booking
+- Booking CTA is connected to the Google Calendar link supplied by Chris.
+- The supplied Google Appointment booking link is connected in the site CTAs. Test it in a private browser window before publishing.
+- “Book 30 minutter” appears in the navigation, hero, after the services, primary consulting card and final contact section. The workshop CTA also invites a booking conversation.

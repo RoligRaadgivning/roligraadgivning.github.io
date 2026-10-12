@@ -111,6 +111,11 @@ h2 { margin-bottom: 1rem; font-size: clamp(2.2rem, 4.5vw, 3.6rem); line-height: 
 .contact .btn-primary { background: var(--lime); color: var(--ink); }
 .contact .btn-outline { color: white; border-color: rgba(255,255,255,.4); background: transparent; }
 .contact .btn-outline:hover { border-color: white; background: rgba(255,255,255,.1); }
+.booking-embed { scroll-margin-top: 100px; margin-top: 2.5rem; padding: clamp(1rem, 3vw, 2rem); border-radius: 20px; background: var(--white); color: var(--ink); box-shadow: 0 18px 50px rgba(9, 25, 65, .16); }
+.booking-heading { margin-bottom: 1rem; }
+.booking-heading h3 { margin: 0 0 .35rem; font-size: clamp(1.35rem, 3vw, 1.8rem); line-height: 1.2; letter-spacing: -.035em; }
+.booking-heading p { margin: 0; color: var(--muted); font-size: .95rem; }
+.booking-embed iframe { display: block; width: 100%; min-height: 600px; border: 0; border-radius: 12px; background: var(--white); }
 .contact-detail { margin-top: 1.2rem; font-size: .88rem !important; }
 .contact-detail a { text-underline-offset: 3px; }
 .site-footer { padding: 1.5rem 0; background: var(--ink); color: #c6d0df; font-size: .82rem; }

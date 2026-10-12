@@ -38,3 +38,9 @@ Denne version samler den seneste Google Kalender-booking og det valgte portræt 
 - Første samtale er gratis og afklarende; der loves ikke en færdig løsning på 30 minutter.
 - Ingen priser eller endnu ikke definerede produktpakker er opfundet.
 - Chris positioneres som personlig sparringspartner, ikke tekstforfatter, SEO-specialist eller traditionelt marketingbureau.
+
+
+## Version 6.1
+- Corrected the GRØN KBH case text to address the visitor directly and remove the internal-note phrasing.
+- Simplified typography: one readable system font (Arial/Helvetica), one body-copy size, and one shared heading size.
+- Preserved the Google Calendar embed, selected portrait, sharing image, Open Graph metadata, and all site pages.

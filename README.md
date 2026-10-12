@@ -30,3 +30,9 @@ Denne version bygger videre på v5.3 og bevarer den indlejrede Google Kalender-b
 
 
 Version 5.5: The uploaded transparent portrait `chris-hero.png` is used as the homepage hero image. The same portrait is incorporated into `chris-social-share.jpg` (1200 × 627) for LinkedIn/Open Graph previews. Google Calendar inline booking and Open Graph metadata are retained. Upload all files in the ZIP to the repository root.
+
+
+## Fejlfinding af booking
+- Indlejringen er sat til at indlæse straks (ikke lazy loading) og har 800 px højde.
+- Hvis kalenderen stadig er tom, kan besøgende åbne den direkte hos Google via linket under kalenderen.
+- Test den direkte bookingadresse i et separat browservindue. Hvis den også mangler ledige tider, kontrollér aftaleplanens tilgængelighed og planlægningsvindue i Google Kalender. Hvis den virker direkte, men ikke i iframe, prøv en anden browser uden indholdsblokkering og kontrollér derefter indlejringen.

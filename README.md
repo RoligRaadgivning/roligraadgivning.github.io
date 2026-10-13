@@ -1,10 +1,10 @@
 # Chris Roliggaard – hjemmeside v6.2
 
-Denne version samler den seneste Google Kalender-booking og det valgte portræt med den opdaterede positionering med fokus på jobsøgende og selvstændige og en mere fokuseret struktur. Den bevarer den eksisterende blå, mørke og limegrønne visuelle identitet.
+Denne version samler den seneste Google Kalender-booking og det valgte portræt med den opdaterede positionering med primært fokus på personlig sparring til selvstændige og mennesker, der drømmer om at blive det; CV-Rystetur er det eneste workshopprodukt og en mere fokuseret struktur. Den bevarer den eksisterende blå, mørke og limegrønne visuelle identitet.
 
 ## Filer
-- `index.html` – kortere forside med det centrale budskab, målgrupper, CV-Rystetur som hovedcase og Google Kalender-booking.
-- `sparring.html` – sparring for jobsøgende (førsteprioritet) og selvstændige (sekundær målgruppe).
+- `index.html` – forside med personlig sparring til selvstændige som primært fokus og CV-Rystetur som sekundært produkt og Google Kalender-booking.
+- `sparring.html` – personlig sparring til selvstændige og mennesker, der drømmer om at blive det.
 - `eksempler.html` – CV-Rystetur som hovedcase, samt GRØN KBH og Folkekirkens Nødhjælp.
 - `om-chris.html` – personlig tilgang, værdier og “Get shit done”-attitude.
 - `styles.css` og `script.js` – fælles design og mobilnavigation.
@@ -32,8 +32,8 @@ Denne version samler den seneste Google Kalender-booking og det valgte portræt 
 - LinkedIn kan cache ældre metadata; kør URL'en gennem værktøjet igen efter ændringer.
 
 ## Indholdsmæssige principper
-- Primær målgruppe: jobsøgende.
-- Sekundær målgruppe: selvstændige.
+- Primært fokus: personlig sparring til selvstændige og mennesker, der drømmer om at blive det.
+- Personlig sparring: selvstændige med idéer, udfordringer eller ambitioner.
 - CV-Rystetur er et selvstændigt koncept og skal være gratis for deltagerne.
 - Første samtale er gratis og afklarende; der loves ikke en færdig løsning på 30 minutter.
 - Ingen priser eller endnu ikke definerede produktpakker er opfundet.
@@ -44,3 +44,9 @@ Denne version samler den seneste Google Kalender-booking og det valgte portræt 
 - Corrected the GRØN KBH case text to address the visitor directly and remove the internal-note phrasing.
 - Simplified typography: one readable system font (Arial/Helvetica), one body-copy size, and one shared heading size.
 - Preserved the Google Calendar embed, selected portrait, sharing image, Open Graph metadata, and all site pages.
+
+
+## Version 6.3
+- Positioneringen er ændret til personlig sparring for selvstændige og mennesker, der drømmer om at blive det.
+- CV-Rystetur omtales fortsat som et gratis initiativ for jobsøgende, men er nu et eksempel på evnen til at samle mennesker og skabe netværk.
+- Selvstændige er fortsat målgruppe for personlig sparring.

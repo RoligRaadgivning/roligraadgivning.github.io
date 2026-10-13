@@ -1,10 +1,10 @@
-# Chris Roliggaard – hjemmeside v6.0
+# Chris Roliggaard – hjemmeside v6.2
 
-Denne version samler den seneste Google Kalender-booking og det valgte portræt med den nye positionering og en mere fokuseret struktur. Den bevarer den eksisterende blå, mørke og limegrønne visuelle identitet.
+Denne version samler den seneste Google Kalender-booking og det valgte portræt med den opdaterede positionering med fokus på jobsøgende og selvstændige og en mere fokuseret struktur. Den bevarer den eksisterende blå, mørke og limegrønne visuelle identitet.
 
 ## Filer
 - `index.html` – kortere forside med det centrale budskab, målgrupper, CV-Rystetur som hovedcase og Google Kalender-booking.
-- `sparring.html` – sparring for jobsøgende/sporskiftere (førsteprioritet) og solo-selvstændige/iværksættere (sekundær målgruppe).
+- `sparring.html` – sparring for jobsøgende (førsteprioritet) og selvstændige (sekundær målgruppe).
 - `eksempler.html` – CV-Rystetur som hovedcase, samt GRØN KBH og Folkekirkens Nødhjælp.
 - `om-chris.html` – personlig tilgang, værdier og “Get shit done”-attitude.
 - `styles.css` og `script.js` – fælles design og mobilnavigation.
@@ -32,8 +32,8 @@ Denne version samler den seneste Google Kalender-booking og det valgte portræt 
 - LinkedIn kan cache ældre metadata; kør URL'en gennem værktøjet igen efter ændringer.
 
 ## Indholdsmæssige principper
-- Primær målgruppe: jobsøgende og sporskiftere.
-- Sekundær målgruppe: solo-selvstændige og iværksættere.
+- Primær målgruppe: jobsøgende.
+- Sekundær målgruppe: selvstændige.
 - CV-Rystetur er et selvstændigt koncept og skal være gratis for deltagerne.
 - Første samtale er gratis og afklarende; der loves ikke en færdig løsning på 30 minutter.
 - Ingen priser eller endnu ikke definerede produktpakker er opfundet.

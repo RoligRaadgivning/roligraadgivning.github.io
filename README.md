@@ -1,6 +1,6 @@
-# Chris Roliggaard – hjemmeside v10.1
+# Chris Roliggaard – hjemmeside v10.2
 
-Denne udgave strammer personlig brand, performance og konvertering. Fokus er klarere value proposition, optimerede billeder (WebP + JPEG), bedre typografisk hierarki og mobil sticky CTA.
+Denne udgave bygger videre på v10.1 med mere mundrette tekster, der ligger tættere på Chris’ egen måde at formulere sig på. Fokus er fortsat nysgerrighed, forståelse og nye muligheder. Billeder, layout og funktioner er bevaret.
 
 ## Hvad er nyt i v10.0
 - **Performance**: Alle billeder er resizet og konverteret til WebP (med JPEG-fallback). Samlet billedvægt er reduceret dramatisk.

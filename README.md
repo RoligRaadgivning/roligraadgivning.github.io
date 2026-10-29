@@ -24,3 +24,9 @@ Dette er det færdige, optimerede konsulentsite for Chris Roliggaard.
 - Reduced vertical spacing between sections and compacted testimonial cards.
 - Restored project descriptions under all four homepage project cards.
 - Retained the navy/orange/warm-light design direction.
+
+
+## Version 11.2 — dark interior pages
+- Applies a consistent full navy background to Sparring, Examples and About pages.
+- Corrects headings, body copy, cards, highlight panels and links for contrast.
+- Keeps the same navy/orange visual identity across all pages.

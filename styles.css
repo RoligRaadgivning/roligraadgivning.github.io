@@ -683,3 +683,125 @@ body { background: var(--bg-primary); color: var(--text-main); }
   .home-example-grid, .case-grid { gap: 1rem; }
   .home-example-copy { padding: 1rem; }
 }
+
+
+/* v11.2 — consistent dark treatment for Sparring, Examples and About pages */
+body.page-sparring,
+body.page-eksempler,
+body.page-om-chris {
+  background: #0b1d2b;
+  color: #f8f4ee;
+}
+.page-sparring main,
+.page-eksempler main,
+.page-om-chris main {
+  background: #0b1d2b;
+  color: #f8f4ee;
+}
+.page-sparring main > section,
+.page-eksempler main > section,
+.page-om-chris main > section {
+  background: #0b1d2b;
+  color: #f8f4ee;
+}
+.page-sparring .section,
+.page-eksempler .section,
+.page-om-chris .section,
+.page-sparring .section-white,
+.page-eksempler .section-white,
+.page-om-chris .section-white,
+.page-sparring .home-about,
+.page-eksempler .home-about,
+.page-om-chris .home-about {
+  background: #0b1d2b !important;
+  color: #f8f4ee !important;
+}
+.page-sparring h1, .page-sparring h2, .page-sparring h3,
+.page-eksempler h1, .page-eksempler h2, .page-eksempler h3,
+.page-om-chris h1, .page-om-chris h2, .page-om-chris h3 {
+  color: #fffdf9;
+}
+.page-sparring p, .page-sparring li,
+.page-eksempler p, .page-eksempler li,
+.page-om-chris p, .page-om-chris li {
+  color: #d7e0e6;
+}
+.page-sparring .section-kicker,
+.page-eksempler .section-kicker,
+.page-om-chris .section-kicker,
+.page-sparring .breadcrumb,
+.page-eksempler .breadcrumb,
+.page-om-chris .breadcrumb {
+  color: #ff7548;
+}
+.page-sparring .value-card,
+.page-eksempler .value-card,
+.page-om-chris .value-card,
+.page-sparring .case-card,
+.page-eksempler .case-card,
+.page-om-chris .case-card,
+.page-sparring .highlight-box,
+.page-eksempler .highlight-box,
+.page-om-chris .highlight-box {
+  background: #102538 !important;
+  color: #f8f4ee !important;
+  border-color: #29404f !important;
+}
+.page-sparring .value-card h2, .page-sparring .value-card h3,
+.page-eksempler .value-card h2, .page-eksempler .value-card h3,
+.page-om-chris .value-card h2, .page-om-chris .value-card h3,
+.page-sparring .case-card h2, .page-sparring .case-card h3,
+.page-eksempler .case-card h2, .page-eksempler .case-card h3,
+.page-om-chris .case-card h2, .page-om-chris .case-card h3 {
+  color: #fffdf9;
+}
+.page-sparring .value-card p, .page-sparring .case-card p,
+.page-eksempler .value-card p, .page-eksempler .case-card p,
+.page-om-chris .value-card p, .page-om-chris .case-card p {
+  color: #d7e0e6;
+}
+.page-sparring .btn-outline,
+.page-eksempler .btn-outline,
+.page-om-chris .btn-outline {
+  color: #f8f4ee;
+  border-color: rgba(248,244,238,.5);
+}
+.page-sparring .site-footer,
+.page-eksempler .site-footer,
+.page-om-chris .site-footer {
+  background: #06131d;
+  color: #d7e0e6;
+}
+.page-sparring .text-link,
+.page-eksempler .text-link,
+.page-om-chris .text-link { color: #ff7548; }
+.page-sparring .text-link:hover,
+.page-eksempler .text-link:hover,
+.page-om-chris .text-link:hover { color: #ff9878; }
+
+/* Prevent pale text on pale backgrounds and improve dark-page spacing */
+.page-sparring .hero-copy,
+.page-eksempler .hero-copy,
+.page-om-chris .hero-copy { color: #d7e0e6; }
+.page-sparring .testimonial-card,
+.page-eksempler .testimonial-card,
+.page-om-chris .testimonial-card,
+.page-sparring .booking-widget,
+.page-eksempler .booking-widget,
+.page-om-chris .booking-widget {
+  background: #102538;
+  color: #f8f4ee;
+  border-color: #29404f;
+}
+.page-sparring .testimonial-card blockquote,
+.page-eksempler .testimonial-card blockquote,
+.page-om-chris .testimonial-card blockquote { color: #f8f4ee; }
+.page-sparring .booking-widget p,
+.page-eksempler .booking-widget p,
+.page-om-chris .booking-widget p { color: #d7e0e6; }
+
+@media (max-width: 700px) {
+  .page-sparring main > section,
+  .page-eksempler main > section,
+  .page-om-chris main > section { padding-top: 2.25rem; padding-bottom: 2.25rem; }
+}

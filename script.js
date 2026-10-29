@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       dots.forEach((dot, i) => {
         dot.classList.toggle('active', i === index);
+        dot.setAttribute('aria-current', i === index ? 'true' : 'false');
       });
       currentIndex = index;
     };

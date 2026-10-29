@@ -1,36 +1,18 @@
-# Chris Roliggaard – hjemmeside v10.2
+# Chris Roliggaard - Konsulentsite
 
-Denne udgave bygger videre på v10.1 med mere mundrette tekster, der ligger tættere på Chris’ egen måde at formulere sig på. Fokus er fortsat nysgerrighed, forståelse og nye muligheder. Billeder, layout og funktioner er bevaret.
+Dette er det færdige, optimerede konsulentsite for Chris Roliggaard.
 
-## Hvad er nyt i v10.0
-- **Performance**: Alle billeder er resizet og konverteret til WebP (med JPEG-fallback). Samlet billedvægt er reduceret dramatisk.
-- **Typografi**: Inter er genindført med tydeligt hierarki (større display-overskrifter).
-- **Hero**: Skarpere formulering af, hvem Chris hjælper, og hvad man får.
-- **Mobil**: Sticky CTA-bar i bunden, så “Tag en snak” altid er tilgængelig.
-- **Cases**: Beholdt stærk struktur, optimerede billeder og klarere resultater.
-- **Konsistens**: Ens versionering, font-loading og meta-tags på alle sider.
+## Indhold i arkivet
+- `index.html`: Forsiden med Værdisøjler, Hero, Social Proof og Booking.
+- `sparring.html`: Dybdegående side om tilgangen ("Forstå først. Skab muligheder bagefter").
+- `eksempler.html`: Cases og projekter (CV-Rystetur, GreenSpeak, ByBanzai, Aarhus Universitet).
+- `om-chris.html`: Personlig baggrund, drivkraft og værdier.
+- `styles.css`: Komplet skræddersyet designstilarter.
+- `script.js`: Mobilnavigation og karusel-funktionalitet.
 
-## Filer
-- `index.html` – forside med anbefalinger, sparring-preview, fire eksempelkort, Om Chris-intro og bookingwidget.
-- `sparring.html` – kort, klar præsentation af sparring.
-- `eksempler.html` – CV-Rystetur (feature), GreenSpeak/GRØN KBH, ByBanzai og Aarhus Universitet.
-- `om-chris.html` – tilgang og værdier.
-- `styles.css` og `script.js` – fælles styling, mobilmenu, karrusel, bookingfaner og kontaktformular.
-- Billeder: `.webp` (primær) + `.jpg` (fallback), med gennemsigtig PNG til portrættet på forsiden. `chris-social-share.jpg` til deling.
 
-## Kalender og kontakt
-- “Tag en snak” / “Book en samtale” fører til Google Kalender-widgetten.
-- “Skriv til Chris” åbner forespørgselsfanen med kontaktformularen.
-- Formularen åbner brugerens e-mail-app; hjemmesiden gemmer ikke data.
-
-## Publicering
-1. Upload **alle** filer fra denne mappe til roden af `roligraadgivning.github.io`.
-2. Erstat eksisterende filer (inkl. de nye `.webp`-filer).
-3. Behold `chris-social-share.jpg` til Open Graph.
-4. Tjek forsiden, sparring, eksempler og om-chris på både computer og mobil efter publicering.
-5. Verificér, at WebP-billeder loader (moderne browsere) og at JPEG-fallback fungerer.
-
-## Tekniske noter
-- CSS: ~18 KB (ren, uden unødvendige rester).
-- JS: uændret logik, version bumpet.
-- Billeder: hero ~50–75 KB WebP, øvrige typisk under 150 KB.
+## Version 11 — visual identity refresh
+- Introduces the navy / orange identity from Chris's LinkedIn banner and presentation.
+- Uses alternating dark and warm-light sections for readability.
+- Keeps the existing copy, site structure, and image references.
+- The ZIP does not include image assets; retain the existing image files already in the GitHub repository.
